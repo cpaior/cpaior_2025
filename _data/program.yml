@@ -16,6 +16,7 @@ days:
             affiliation: "Monash University"
           - time: "09:00–10:00"
             title: "CP, AI and OR for Classical Planning (Part 1)"
+            speaker: "Malte Helmert and Florian Pommerening"
       - time: "10:00–10:30"
         title: "Coffee/tea break"
         kind: break
@@ -26,6 +27,7 @@ days:
         talks:
           - time: "10:30–11:30"
             title: "CP, AI and OR for Classical Planning (Part 2)"
+            speaker: "Malte Helmert and Florian Pommerening"
       - title: "Lunch Break"
         time: "11:30-13:00"
         kind: break
@@ -36,6 +38,7 @@ days:
         talks:
           - time: "13:00-15:00"
             title: "CP, AI and OR for MDP Planning"
+            speaker: "Scott Sanner"
       - time: "15:00–15:30"
         title: "Coffee/tea break"
         kind: break
@@ -47,6 +50,7 @@ days:
         talks:
           - time: "15:30–17:30"
             title: "CP, AI and OR for Path Planning"
+            speaker: "Edward Lam"
           - time: "17:30–17:45"
             title: "Closing Remarks"
             speaker: "Buser Say"
