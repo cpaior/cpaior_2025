@@ -1,0 +1,260 @@
+/* =================== THEME =================== */
+:root{
+    --brand: #1d4ed8;
+    --brand-2: #0ea5e9;
+    --bg: #ffffff;
+    --text: #0f172a;
+    --muted: #f6f7f9;
+    --subtext: #475569;
+    --border: #e5e7eb;
+    --card: #ffffff;
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(0,0,0,0.05), 0 10px 25px rgba(0,0,0,0.07);
+}
+@media (prefers-color-scheme: dark){
+    :root{
+    --bg: #0b1220;
+    --text: #e5e7eb;
+    --muted: #0f172a;
+    --subtext: #94a3b8;
+    --border: #1f2a44;
+    --card: #0f172a;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 10px 25px rgba(0,0,0,0.3);
+    }
+}
+/* Base */
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+/* Hero */
+.hero{
+    background: radial-gradient(1200px 500px at 10% -20%, rgba(29,78,216,0.18), transparent 60%),
+                radial-gradient(1200px 500px at 90% -20%, rgba(14,165,233,0.18), transparent 60%);
+    border-bottom:1px solid var(--border);
+}
+.hero-inner{max-width:1100px;margin:0 auto;padding:36px 24px 28px}
+.kicker{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;color:#fff;background:linear-gradient(90deg,var(--brand),var(--brand-2));padding:6px 10px;border-radius:999px;box-shadow:var(--shadow)}
+.title{font-size:clamp(28px,4vw,44px);margin:12px 0 8px}
+.meta{color:var(--subtext);font-size:clamp(14px,2.2vw,16px)}
+
+/* Nav */
+.tabs{position:sticky;top:0;background:rgba(255,255,255,0.82);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--border);z-index:30}
+@media (prefers-color-scheme: dark){ .tabs{background:rgba(11,18,32,0.82);} }
+.tabs-inner{max-width:1100px;margin:0 auto;display:flex;gap:10px;padding:10px 24px}
+.tab{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:var(--card);box-shadow:var(--shadow);font-weight:600}
+.tab[aria-current="page"]{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;border-color:transparent}
+
+/* Sections */
+section{scroll-margin-top:74px}
+h2{font-size:clamp(20px,3.5vw,28px);margin:22px 0 12px}
+.lead{color:var(--subtext)}
+
+/* Overview */
+/* .overview{display:grid;grid-template-columns:1fr;gap:12px}
+.slot{display:grid;grid-template-columns:136px 1fr;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:7px 8px;box-shadow:var(--shadow)}
+.slot .time{font-weight:700}
+.slot .what{color:var(--subtext)}
+@media (max-width:560px){ .slot{grid-template-columns:1fr} } */
+
+
+/* === OVERVIEW — COMPACT === */
+.overview{
+  display:grid;
+  gap:6px;                    /* less space between rows */
+}
+
+.slot{
+  display:grid;
+  grid-template-columns: 96px 1fr;  /* narrower time column */
+  align-items: baseline;
+  gap:8px;                    /* tighter gap */
+  padding:4px 0;              /* much less vertical padding */
+  border:0;                   /* no border */
+  background:transparent;     /* no card look */
+  box-shadow:none;            /* remove any shadow if present */
+}
+
+.slot .time{
+  font-weight:600;
+  font-size:0.95rem;
+  line-height:1.2;
+}
+
+.slot .what{
+  color:var(--text);
+  font-size:0.95rem;
+  line-height:1.2;
+}
+
+/* subtle divider between rows (optional) */
+.slot:not(:last-child){
+  border-bottom:1px solid var(--border);
+}
+
+@media (max-width:560px){
+  .slot{ grid-template-columns: 1fr; } /* stacks cleanly on phones */
+}
+
+/* Filters & Search */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0 14px}
+.chip{padding:7px 12px;border-radius:999px;border:1px solid var(--border);background:var(--card);cursor:pointer;user-select:none}
+.chip.active{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;border-color:transparent}
+.search{flex:1 1 240px;display:flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--card);padding:8px 10px;border-radius:999px}
+.search input{border:0;outline:0;background:transparent;width:100%;color:inherit;font-size:15px}
+
+/* Sessions */
+.session{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);margin:12px 0;box-shadow:var(--shadow);overflow:hidden}
+.session > summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.session > summary::-webkit-details-marker{display:none}
+.badge{font-size:12px;padding:4px 8px;border-radius:999px;background:var(--muted);border:1px solid var(--border);color:var(--subtext)}
+.talks{border-top:1px solid var(--border);padding:6px 0}
+.talk{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 16px}
+.talk+.talk{border-top:1px dashed var(--border)}
+.talk-time{font-weight:700}
+.talk-title{font-weight:700}
+.talk-meta{color:var(--subtext);font-size:0.95rem;margin-top:2px}
+@media (max-width:560px){ .talk{grid-template-columns:1fr} }
+
+/* Footer & utilities */
+footer{margin:40px 0 24px;color:var(--subtext);font-size:0.92rem}
+.top{position:fixed;right:16px;bottom:16px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;border:none;border-radius:999px;padding:10px 12px;box-shadow:var(--shadow);cursor:pointer}
+
+/* Print */
+@media print{
+    .tabs, .controls, .top{display:none !important}
+    details.session{border:1px solid #bbb; page-break-inside: avoid;}
+    details.session[open] > summary, details.session > summary{background:#f0f0f0; -webkit-print-color-adjust: exact; print-color-adjust: exact;}
+    details.session{display:block}
+    details.session > summary{cursor:default}
+    details.session[open] .talks, .talks{display:block}
+}
+
+/* === Day heading with Prev/Next arrows === */
+.day-heading{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:22px 0 10px;
+  scroll-margin-top:74px;   /* keeps anchor visible under sticky nav */
+}
+.day-heading .day-label{
+  flex:1;
+  font-weight:700;
+}
+
+.day-arrow{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:32px; height:32px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  text-decoration:none;
+  color:var(--sub, #475569);
+  background:var(--card, #fff);
+  box-shadow:var(--shadow, 0 1px 2px rgba(0,0,0,.05));
+  line-height:1;
+  font-size:18px;
+}
+.day-arrow:hover{
+  color:var(--brand, #1d4ed8);
+  border-color:var(--brand, #1d4ed8);
+}
+.day-arrow[aria-disabled="true"]{
+  opacity:.35;
+  pointer-events:none;
+}
+
+@media (max-width:560px){
+  .day-arrow{ width:28px; height:28px; }
+}
+
+@media print{
+  .day-arrow{ display:none !important; }
+}
+
+/* ===== Non-technical colour tokens ===== */
+:root{
+  /* Light mode tints */
+  --break-bg:  #fff7ed; /* soft amber 50 */
+  --social-bg: #f5f3ff; /* soft violet 50 */
+  --admin-bg:  #f1f5f9; /* slate 50 */
+  --nt-text:   inherit; /* text colour for non-tech blocks */
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    /* Dark mode subtle raised tiles */
+    --break-bg:  #3a2a12; /* warm amber-ish */
+    --social-bg: #2b2340; /* muted violet */
+    --admin-bg:  #152033; /* slate-ish */
+    --nt-text:   #e5e7eb;
+  }
+}
+
+/* ===== Overview — you already have the compact style; add highlights when non-technical ===== */
+
+.slot.kind-break,
+.slot.kind-social,
+.slot.kind-admin{
+  background: var(--break-bg);      /* default; overridden below */
+  /* border-radius:10px; */
+  /*padding:6px 8px; */                 /* tiny padding to make the highlight feel intentional */
+  /*border:1px solid var(--border);*/
+}
+.slot.kind-social{ background: var(--social-bg); }
+.slot.kind-admin{  background: var(--admin-bg);  }
+.slot.kind-break + .slot.kind-break{ border-top:0; } /* avoid double borders on consecutive breaks */
+
+/* ===== Sessions (Detailed Program) ===== */
+/* Colour only the summary bar (sessions themselves), since talks are usually technical. */
+.session.kind-break   > summary{ background: var(--break-bg); color: var(--nt-text); }
+.session.kind-social  > summary{ background: var(--social-bg); color: var(--nt-text); }
+.session.kind-admin   > summary{ background: var(--admin-bg);  color: var(--nt-text); }
+
+/* Optional: if you ever tag a whole session as non-technical, soften its container border */
+.session.kind-break,
+.session.kind-social,
+.session.kind-admin{
+  border-color: var(--border);
+}
+
+.session {
+    scroll-margin-top:74px;   /* keeps anchor visible under sticky nav */
+}
+
+/* Make title + icon align nicely */
+.talk-title{
+  display: inline-flex;           /* or flex; both fine here */
+  align-items: center;
+  gap: 6px;
+}
+
+/* DOI icon button */
+.talk-title .doi{
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px; height: 20px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--brand);            /* icon uses currentColor */
+  background: var(--card);
+  text-decoration: none;
+  opacity: .85;
+}
+.talk-title .doi:hover{
+  opacity: 1;
+  border-color: var(--brand);
+}
+.talk-title .doi svg{
+  width: 16px; height: 16px;
+}
+
+@media print {
+  .talk-title .doi{ display:none !important; }  /* optional for cleaner print */
+}

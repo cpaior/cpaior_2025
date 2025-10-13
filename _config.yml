@@ -1,0 +1,3 @@
+title: CPAIOR 2025
+theme: null          # keep null if you’re hand-rolling styles
+markdown: kramdown   # (default)

@@ -1,0 +1,121 @@
+---
+layout: default
+title: Program
+---
+
+<!-- =================== HERO =================== -->
+<header class="hero">
+<div class="hero-inner">
+    <!-- Replace event tag, name, dates, venue -->
+    <div class="kicker">CPAIOR 2025</div>
+    <h1 class="title">Conference Program</h1>
+    <p class="meta">10-13 November 2025 · Melbourne, Australia</p>
+</div>
+</header>
+
+<!-- =================== NAV =================== -->
+<nav class="tabs" role="navigation" aria-label="Sections">
+<div class="tabs-inner">
+    <a class="tab" href="#overview" aria-current="page">Overview</a>
+    <a class="tab" href="#program">Detailed Program</a>
+</div>
+</nav>
+
+<main class="container">
+        
+    <section id="overview">
+    <h2>Overview (Sessions & Breaks)</h2>
+    {% for day in site.data.program.days %}
+        {% assign i = forloop.index %}
+        <h3>{{ day.label }}</h3>
+        <div class="overview">
+        {% for s in day.sessions %}
+            {% assign j = forloop.index %}
+            {% assign skind = s.kind | default: 'technical' %}
+            
+            <div class="slot kind-{{ skind }}">
+                <div class="time">{{ s.time }}</div>
+                {% if skind == "social" or skind == "technical" %}
+                <a href="#session-{{ i }}-{{ j }}" class="slot-link" aria-label="Go to details for {{ s.title }} at {{ s.time }}{% if s.room %}, {{ s.room }}{% endif %}">
+                {% endif %}
+                <div class="what"><strong>{{ s.title }}</strong>{% if s.room %} • {{ s.room }}{% endif %}</div>
+                {% if skind == "social" or skind == "technical" %}
+                </a>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </div>
+    {% endfor %}
+    </section>
+
+    <section id="program">
+    <h2>Detailed Program</h2>
+    {% for day in site.data.program.days %}
+        {% assign i = forloop.index %}
+        <h3 id="prog-day-{{ i }}" class="day-heading">
+        {% if i > 1 %}
+            <a class="day-arrow prev" href="#prog-day-{{ i | minus: 1 }}" aria-label="Previous day" rel="prev">‹</a>
+        {% else %}
+            <a class="day-arrow prev" aria-disabled="true">‹</a>
+        {% endif %}
+
+        <span class="day-label">{{ day.label }}</span>
+
+        {% if forloop.last == false %}
+            <a class="day-arrow next" href="#prog-day-{{ i | plus: 1 }}" aria-label="Next day" rel="next">›</a>
+        {% else %}
+            <a class="day-arrow next" aria-disabled="true">›</a>
+        {% endif %}
+        </h3>
+    
+        {% for s in day.sessions %}
+        {% assign j = forloop.index %}
+        <div id="session-{{ i }}-{{ j }}" class="session kind-{{ s.kind | default: 'technical' }}" data-track="{{ s.room }}">
+            <summary>
+            {{ s.title }}
+            <span class="badge">{{ s.time }}</span>
+            {% if s.room %}<span class="badge">{{ s.room }}</span>{% endif %}
+            {% if s.chair %}<span class="badge">Chair: {{ s.chair }}</span>{% endif %}
+            </summary>
+            {% if s.talks %}
+            <div class="talks">
+            {% for t in s.talks %}
+                <article class="talk" data-search="{{ t.title | downcase }} {{ t.speaker | downcase }} {{ s.room | downcase }}">
+                <div class="talk-time">{{ t.time }}</div>
+                <div>
+                    <div class="talk-title">
+                    {{ t.title }}
+
+                    {%- assign doi_raw = t.doi | to_s | strip -%}
+                    {%- if doi_raw != '' -%}
+                        {%- if doi_raw contains '://' -%}
+                        {%- assign doi_url = doi_raw -%}
+                        {%- else -%}
+                        {%- assign doi_url = 'https://doi.org/' | append: doi_raw -%}
+                        {%- endif -%}
+                        <a class="doi" href="{{ doi_url }}" target="_blank" rel="noopener"
+                        aria-label="DOI: {{ doi_raw }}">
+                        <!-- inline 'paper/document' icon -->
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" focusable="false">
+                            <path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path fill="currentColor" d="M14 2v6h6"/>
+                            <path fill="currentColor" d="M8 13h8v2H8zM8 17h8v2H8zM8 9h4v2H8z"/>
+                        </svg>
+                        </a>
+                    {%- endif -%}
+                    </div>
+                    <div class="talk-meta">
+                    {% if t.speaker %}
+                    {{ t.speaker }}{% if t.affiliation %} ({{ t.affiliation }}){% endif %} • {% endif %}{{ t.room | default: s.room }}
+                    </div>
+                </div>
+                </article>
+            {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    {% endfor %}
+    </section>
+
+</main>
