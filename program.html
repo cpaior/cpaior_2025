@@ -106,7 +106,7 @@ title: Program
                     </div>
                     <div class="talk-meta">
                     {% if t.speaker %}
-                    {{ t.speaker }}{% if t.affiliation %} ({{ t.affiliation }}){% endif %} • {% endif %}{{ t.room | default: s.room }}
+                    {{ t.speaker }}{% if t.affiliation %} ({{ t.affiliation }}){% endif %}{% endif %}
                     </div>
                 </div>
                 </article>
