@@ -71,7 +71,7 @@ days:
     talks:
     - time: 09:00–09:20
       title: Breaking the Symmetries of Indistinguishable Objects
-      speaker: Mun See Chang, Ian P. Gent, Christopher Jefferson
+      speaker: Özgür Akgün, Mun See Chang, Ian P. Gent, Christopher Jefferson
       doi: https://doi.org/10.1007/978-3-031-95973-8_10
       abstract: Indistinguishable objects often occur when modelling problems in constraint
         programming, as well as in other related paradigms. They occur when objects
@@ -681,7 +681,7 @@ days:
         instances.
     - time: 10:50–11:10
       title: Minimising Source-Plate Swaps for Robotised Compound Dispensing in Microplates
-      speaker: Ramiz Gindullin, Brinton Seashore-Ludlow, Ola Spjuth
+      speaker: Ramiz Gindullin, María Andreína Francisco Rodríguez, Brinton Seashore-Ludlow, Ola Spjuth
       doi: https://doi.org/10.1007/978-3-031-95973-8_16
       abstract: Liquid-handling instruments are indispensable tools in modern biomedical
         laboratories, streamlining compound and sample management tasks with precision
