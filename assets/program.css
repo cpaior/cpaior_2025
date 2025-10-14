@@ -110,6 +110,8 @@ h2{font-size:clamp(20px,3.5vw,28px);margin:22px 0 12px}
 .session{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);margin:12px 0;box-shadow:var(--shadow);overflow:hidden}
 .session > summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .session > summary::-webkit-details-marker{display:none}
+.session-header{list-style:none;padding:8px 16px;font-weight:700;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.session-header::-webkit-details-marker{display:none}
 .badge{font-size:12px;padding:4px 8px;border-radius:999px;background:var(--muted);border:1px solid var(--border);color:var(--subtext)}
 .talks{border-top:1px solid var(--border);padding:6px 0}
 .talk{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 16px}
@@ -138,7 +140,7 @@ footer{margin:40px 0 24px;color:var(--subtext);font-size:0.92rem}
   display:flex;
   align-items:center;
   gap:8px;
-  margin:22px 0 10px;
+  margin:28px 0 10px;
   scroll-margin-top:74px;   /* keeps anchor visible under sticky nav */
 }
 .day-heading .day-label{
@@ -211,9 +213,9 @@ footer{margin:40px 0 24px;color:var(--subtext);font-size:0.92rem}
 
 /* ===== Sessions (Detailed Program) ===== */
 /* Colour only the summary bar (sessions themselves), since talks are usually technical. */
-.session.kind-break   > summary{ background: var(--break-bg); color: var(--nt-text); }
-.session.kind-social  > summary{ background: var(--social-bg); color: var(--nt-text); }
-.session.kind-admin   > summary{ background: var(--admin-bg);  color: var(--nt-text); }
+.session.kind-break   > .session-header{ background: var(--break-bg); color: var(--nt-text); }
+.session.kind-social  > .session-header{ background: var(--social-bg); color: var(--nt-text); }
+.session.kind-admin   > .session-header{ background: var(--admin-bg);  color: var(--nt-text); }
 
 /* Optional: if you ever tag a whole session as non-technical, soften its container border */
 .session.kind-break,
@@ -257,4 +259,172 @@ footer{margin:40px 0 24px;color:var(--subtext);font-size:0.92rem}
 
 @media print {
   .talk-title .doi{ display:none !important; }  /* optional for cleaner print */
+}
+
+/* ===== Talk Abstract (details/summary) ===== */
+
+/* Target either <details class="talk-abstract">… or <div class="talk-abstract"><details>… */
+details.talk-abstract,
+.talk-abstract > details{
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: none;
+}
+
+/* Summary (the clickable bar) */
+details.talk-abstract > summary,
+.talk-abstract > details > summary{
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--subtext);
+}
+
+/* === Talk Abstracts — ultra-compact when closed === */
+
+/* Support either <details class="talk-abstract">… or <div class="talk-abstract"><details>… */
+details.talk-abstract,
+.talk-abstract > details{
+  margin: 4px 0 0;
+  border: 0;
+  background: transparent;
+}
+
+/* Closed state: make the summary look like a small link */
+details.talk-abstract > summary,
+.talk-abstract > details > summary{
+  all: unset;                        /* nuke default summary styles */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  /* color: var(--brand); */
+  font-weight: 600;
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+details.talk-abstract > summary:hover,
+.talk-abstract > details > summary:hover{
+  text-decoration: underline;
+}
+
+/* Hide native marker; use a tiny chevron */
+details.talk-abstract > summary::-webkit-details-marker,
+.talk-abstract > details > summary::-webkit-details-marker{ display: none; }
+details.talk-abstract > summary::before,
+.talk-abstract > details > summary::before{
+  content: "▸";
+  font-size: 0.9rem;
+  line-height: 1;
+  opacity: .75;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+/* Open state: turn into a small card */
+details.talk-abstract[open] > summary,
+.talk-abstract > details[open] > summary{
+  padding: 6px 8px;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: var(--shadow);
+  text-decoration: none;            /* remove hover underline once open */
+}
+details.talk-abstract[open] > summary::before,
+.talk-abstract > details[open] > summary::before{
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* Abstract body */
+details.talk-abstract > *:not(summary),
+.talk-abstract > details > *:not(summary){
+  padding: 10px 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Accessibility */
+details.talk-abstract > summary:focus-visible,
+.talk-abstract > details > summary:focus-visible{
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Print: show content cleanly, no chevron */
+@media print{
+  details.talk-abstract > summary::before,
+  .talk-abstract > details > summary::before{ content: ""; }
+}
+
+/* Left column now stacks time + flag vertically */
+.talk-time{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;                /* space between time and flag */
+}
+
+/* Flag styling */
+.talk-flag{
+  font-size: 0.62rem;
+  line-height: 1;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2px 3px;
+  border-radius: 999px;
+
+  /* colours that fit the existing palette */
+  color: #0f172a;                           /* dark text in light mode */
+  background: #e0ecff;                      /* soft brand-tinted pill */
+  border: 1px solid rgba(29,78,216,0.25);   /* subtle brand border */
+}
+
+/* If your left column is narrow, prevent awkward wrapping */
+@media (max-width:560px){
+  .talk-flag{ font-size: 0.7rem; }
+}
+
+/* Apply to the existing flag */
+.talk-flag{
+  color: var(--flag-text);
+  background: var(--flag-bg);
+  border: 1px solid var(--flag-border);
+}
+
+/* Optional: subtle hover/focus lift (keeps the red feel) */
+.talk-flag:hover,
+.talk-flag:focus-visible{
+  filter: brightness(0.98);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--flag-border), transparent 60%);
+}
+
+.talk-flag.is-award    { --flag-bg:    #fee2e2;        /* soft red 200 */
+  --flag-border:#fca5a5;        /* red 300 */
+  --flag-text:  #7f1d1d;        /* red 900 */
+}
+
+.talk-note{
+  margin-top:4px;
+  font-size:0.9rem;
+  color:var(--subtext);
+  font-style:italic;
+  font-weight:700
 }

@@ -1,333 +1,919 @@
 days:
-  - label: "Monday, 10 November 2025"
-    sessions:
-      - title: "Registration"
-        time: "From 08:00"
-        room: "Foyer"
-        kind: admin
-      - title: "Master Class"
-        time: "08:45-10:00"
-        room: "Forum 3"
-        chair: "Buser Say"
-        talks:
-          - time: "08:45-09:00"
-            title: "Opening Remarks"
-            speaker: "Buser Say"
-            affiliation: "Monash University"
-          - time: "09:00–10:00"
-            title: "CP, AI and OR for Classical Planning (Part 1)"
-            speaker: "Malte Helmert and Florian Pommerening"
-      - time: "10:00–10:30"
-        title: "Coffee/tea break"
-        kind: break
-        room: "Foyer"
-      - title: "Master Class"
-        time: "10:30-11:30"
-        room: "Forum 3"
-        talks:
-          - time: "10:30–11:30"
-            title: "CP, AI and OR for Classical Planning (Part 2)"
-            speaker: "Malte Helmert and Florian Pommerening"
-      - title: "Lunch Break"
-        time: "11:30-13:00"
-        kind: break
-      - title: "Master Class"
-        time: "13:00-15:00"
-        room: "Forum 3"
-        chair: "Buser Say"
-        talks:
-          - time: "13:00-15:00"
-            title: "CP, AI and OR for MDP Planning"
-            speaker: "Scott Sanner"
-      - time: "15:00–15:30"
-        title: "Coffee/tea break"
-        kind: break
-        room: "Foyer"
-      - title: "Master Class"
-        time: "15:30-17:45"
-        room: "Forum 3"
-        chair: "Buser Say"
-        talks:
-          - time: "15:30–17:30"
-            title: "CP, AI and OR for Path Planning"
-            speaker: "Edward Lam"
-          - time: "17:30–17:45"
-            title: "Closing Remarks"
-            speaker: "Buser Say"
-            affiliation: "Monash University"
-
-  - label: "Tuesday, 11 November 2025"
-    sessions:
-      - title: "Registration"
-        time: "From 08:00"
-        room: "Foyer"
-        kind: admin
-      - time: "08:45–09:15"
-        title: "Opening Remarks"
-        room: "Forum 3"
-        chair: "Guido Tack"
-      - title: "Session 1 - Symmetry Breaking and Constraint Acquisition"
-        time: "09:00–10:00"
-        room: "Forum 3"
-        talks:
-          - time: "09:00–09:20"
-            title: "Breaking the Symmetries of Indistinguishable Objects"
-            speaker: "Mun See Chang, Ian P. Gent, Christopher Jefferson"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_10"
-          - time: "09:20–09:40"
-            title: "Breaking Symmetries from a Set-Covering Perspective"
-            speaker: "Michael Codish, Mikolas Janota"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_11"
-          - time: "09:40–10:00"
-            title: "Acquiring and Selecting Implied Constraints with an Application to the BinSeq and Partition Global Constraints"
-            speaker: "Jovial Cheukam Ngouonou, Ramiz Gindullin, Claude-Guy Quimper, Nicloas Beldiceanu, Rémi Douence"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_10"
-      - time: "10:00–10:30"
-        title: "Coffee/tea break"
-        room: "Foyer"
-        kind: break
-      - time: "10:30–11:30"
-        title: "Session 2 - Invited Talk"
-        room: "Forum 3"
-      - time: "11:30–11:50"
-        title: "Session 3 - Extended Abstracts"
-        room: "Forum 3"
-        talks:
-          - time: "11:30–11:40"
-            title: "Enhancing Beam Search with Machine Learning for Resource-Constrained Shortest Path Reformulation of Combinatorial Optimization Problems"
-            speaker: "Fulin Yan"
-          - time: "11:40–11:50"
-            title: "PINCHD: An Integrated Algorithm for Large-scale Maximum Weighted Independent Set Problems"
-            speaker: "Linhao Luo, Hue Chi Lam, Vicky Mak-Hau"
-      - time: "12:00–13:30"
-        title: "Lunch break"
-        kind: break
-      - time: "13:30–15:00"
-        title: "Session 4 - Applications: Scheduling and resource allocation in industry, healthcare, sustainability"
-        room: "Forum 3"
-        talks:
-          - time: "13:30–13:50"
-            title: "Optimized Scheduling of Medical Appointment Sequences using Constraint Programming"
-            speaker: "George Assaf, Sven Löffler, Petra Hofstedt"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_1"
-          - time: "13:50–14:10"
-            title: "An integrated optimisation method for aluminium hot rolling"
-            speaker: "Ioannis Avgerinos, Apostolos Besis, Ioannis Mourtos, Athanasios Psarros, Stavros Vatikiotis, Georgios Zois"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_2"
-          - time: "14:10–14:30"
-            title: "Reducing Income Variability in Natural Resource Portfolios via Integer Programming"
-            speaker: "Laura Greenstreet, Qinru Shi, Marc Grimson, Franz W. Simon, Suresh A. Sethi, Carla P. Gomes, David B. Shmoys"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_2"
-          - time: "14:30–14:40"
-            title: "Real-Time Surgery Scheduling under Uncertainty: A Markov Decision Process Approach"
-            speaker: "Hajar Sadegh Zadeh"
-          - time: "14:40–14:50"
-            title: "Constraint Optimisation Programming of Frequency-Based Designs for Response Surface Metamodelling"
-            speaker: "Andrew Gill, David Marlow, Susan M. Sanchez, Paul J. Sanchez"
-      - time: "15:00–15:30"
-        title: "Coffee/tea break"
-        room: "Foyer"
-        kind: break
-      - time: "15:30–17:00"
-        title: "Session 5 - Reinforcement Learning and Learning Heuristics"
-        room: "Forum 3"
-        talks:
-          - time: "15:30–15:50"
-            title: "Reinforcement Learning-based Heuristics to Guide Domain-Independent Dynamic Programming"
-            speaker: "Minori Narita, Ryo Kuroiwa, J. Christopher Beck"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_9"
-          - time: "15:50–16:10"
-            title: "Shaping Reward Signals in Reinforcement Learning Using Constraint Programming"
-            speaker: "Chao Yin, Quentin Cappart, Gilles Pesant"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_16"
-          - time: "16:10–16:30"
-            title: "Learning Primal Heuristics for 0-1 Knapsack Interdiction Problems"
-            speaker: "Luca Ferrarini, Stefano Gualandi, Letizia Moro, Axel Parmentier"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_14"
-          - time: "16:30–16:50"
-            title: "Self-Supervised Penalty-Based Learning for Robust Constrained Optimization"
-            speaker: "Wyame Benslimane, Paul Grigas"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_7"
-          - time: "16:50–17:00"
-            title: "Constrained Sequential Inference in Machine Learning Using Constraint Programming"
-            speaker: "Virasone Manibod, David Saikali, Gilles Pesant"
-      - time: "18:00–20:00"
-        title: "Opening Reception"
-        kind: social
-
-  - label: "Wednesday, 12 November 2025"
-    sessions:
-      - title: "Registration"
-        time: "From 08:00"
-        room: "Foyer"
-        kind: admin
-      - time: "09:00–10:00"
-        title: "Invited Talk (joint with ICAPS)"
-        room: "Forum"
-      - time: "10:00–10:30"
-        title: "Coffee/tea break"
-        room: "Foyer"
-        kind: break
-      - time: "10:30–12:00"
-        title: "Session 6 - Applications: Satellites and UAVs"
-        room: "Forum 3"
-        talks:
-          - time: "10:30–10:50"
-            title: "Time-dependent Orienteering for High Altitude UAVs to Monitor Greenhouse Gases:  Mixed Integer Programming vs. Monte Carlo Tree Search"
-            speaker: "Richard Levinson, Vinay Ravindra, Jeremy Frank, Meghan Saephan"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_6"
-          - time: "10:50–11:10"
-            title: "Integer and Constraint Programming for the Offline Nanosatellite Partition Scheduling Problem"
-            speaker: "Julien Rouzot, Mickaël Pereira, Christian Artigues, Romain Boyer, Frédéric Camps, Philippe Garnier, Emmanuel Hebrard, Pierre Lopez"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_11"
-          - time: "11:10–11:30"
-            title: "Hybridizing Machine Learning and Optimization for Planning Satellite Observations"
-            speaker: "Romain Barrault, Cédric Pralet, Gauthier Picard, Eric Sawyer"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_5"
-          - time: "11:30–11:50"
-            title: "Satellite Communication Resources Management in a Earth Observation Federation of Constellations"
-            speaker: "Henoïk Willot, Jean-Loup Farges, Gauthier Picard, Philippe Pavero"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_15"
-      - time: "12:00–13:30"
-        title: "Lunch break"
-        kind: break
-      - time: "13:30–15:00"
-        title: "Session 7 - Solving Technology"
-        room: "Forum 3"
-        talks:
-          - time: "13:30–13:50"
-            title: "Revisiting Pseudo-Boolean Encodings from an Integer Perspective"
-            speaker: "Hendrik Bierlee, Jip J. Dekker, Peter J. Stuckey"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_8"
-          - time: "13:50–14:10"
-            title: "Parallelising Lazy Clause Generation with Trail Sharing"
-            speaker: "Toby O. Davies, Frédéric Didier, Laurent Perron, Peter J. Stuckey"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_13"
-          - time: "14:10–14:30"
-            title: "Analyzing the numerical correctness of branch-and-bound decisions for mixed-integer programming"
-            speaker: "Alexander Hoen, Ambros Gleixner"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_3"
-          - time: "14:30–14:50"
-            title: "Determining the Most Promising Selective Backbone Size for Partial Knowledge Compilation"
-            speaker: "Andrea Balogh, Guillaume Escamocher, Barry O'Sullivan"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_3"
-      - time: "15:00–15:30"
-        title: "Coffee/tea break"
-        room: "Foyer"
-        kind: break
-      - time: "15:30–17:00"
-        title: "Session 8 - Machine Learning and Mixed Integer Programming"
-        room: "Forum 3"
-        talks:
-          - time: "15:30–15:50"
-            title: "LLMs for Cold-Start Cutting Plane Separator Configuration"
-            speaker: "Connor Lawless, Yingxi Li, Anders Wikum, Madeleine Udell, Ellen Vitercik"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_4"
-          - time: "15:50–16:10"
-            title: "Multi-task Representation Learning for Mixed Integer Linear Programming"
-            speaker: "Junyang Cai, Taoan Huang, Bistra Dilkina"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_9"
-          - time: "16:10–16:30"
-            title: "PySCIPOpt-ML: Embedding Trained Machine Learning Models into Mixed-Integer Programs"
-            speaker: "Mark Turner, Antonia Chmiela, Thorsten Koch, Michael Winkler"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_14"
-          - time: "16:30–16:50"
-            title: "Constrained Machine Learning Through Hyperspherical Representation"
-            speaker: "Gaetano Signorelli, Michele Lombardi"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_13"
-          - time: "16:50–17:00"
-            title: "A Surrogate-Based Multi-Objective Optimization Framework with Uncertainty Consideration"
-            speaker: "Jesica de Armas"
-      - time: "18:30–23:00"
-        title: "Conference Banquet"
-        room: "Old Melbourne Gaol"
-        kind: social
-
-  - label: "Thursday, 13 November 2025"
-    sessions:
-      - title: "Registration"
-        time: "From 08:00"
-        room: "Foyer"
-        kind: admin
-      - time: "09:00–10:00"
-        title: "Invited Talk (joint with ICAPS)"
-        room: "Forum"
-      - time: "10:00–10:30"
-        title: "Coffee/tea break"
-        room: "Foyer"
-        kind: break
-      - time: "10:30–12:00"
-        title: "Session 9 - Applications: Manufacturing and Laboratory Scheduling"
-        room: "Forum 3"
-        talks:
-          - time: "10:30–10:50"
-            title: "Modeling and Solving the Generalized Test Laboratory Scheduling Problem"
-            speaker: "Philipp Danzinger, Tobias Geibinger, Florian Mischek, Nysret Musliu"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_12"
-          - time: "10:50–11:10"
-            title: "Minimising Source-Plate Swaps for Robotised Compound Dispensing in Microplates"
-            speaker: "Ramiz Gindullin, Brinton Seashore-Ludlow, Ola Spjuth"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_16"
-          - time: "11:10–11:30"
-            title: "A Dynamic Programming Approach for the Job Sequencing and Tool Switching Problem"
-            speaker: "Emma Legrand, Vianney Copp, Daniele Catanzaro, Pierre Schaus"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_5"
-          - time: "11:30–11:40"
-            title: "A Simplified Model for Marker-Assisted Gene Pyramiding: Minimising Generations and Crossings"
-            speaker: "Kelvin Davis, Pierre Le Bodic, Andreas T Ernst"
-          - time: "11:40–11:50"
-            title: "The Edge-based Contiguous p-median Problem with Connections to Logistics Districting"
-            speaker: "Adolfo R. Escobedo"
-      - time: "12:00–13:30"
-        title: "Lunch break"
-        kind: break
-      - time: "13:30–15:00"
-        title: "Session 10 - Applications: Transport and Power Systems"
-        room: "Forum 3"
-        talks:
-          - time: "13:30–13:50"
-            title: "A Column Generation Heuristic for Multi-depot Electric Bus Scheduling"
-            speaker: "Yoann Sabatier Montanaro, Thomas Jacquet, Quentin Cappart, Guy Desaulniers"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_7"
-          - time: "13:50–14:10"
-            title: "Combining Constraint Programming and Metaheuristics for Aircraft Maintenance Routing with a Distribution Objective"
-            speaker: "Ida Gjergji, Lucas Kletzander, Hendrik Bierlee, Nysret Musliu, Peter J. Stuckey"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_1"
-          - time: "14:10–14:30"
-            title: "Leveraging Quantum Computing for Accelerated Classical Algorithms in Power Systems Optimization"
-            speaker: "Rosemary Barrass, Harsha Nagarajan, Carleton Coffrin"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_4"
-          - time: "14:30–14:50"
-            title: "Dynamic Discretization Discovery for Drone-Assisted Vehicle Routing Problem with Time Windows"
-            speaker: "Zihan Zhang, Edward Lam, Pierre Le Bodic"
-          - time: "14:50–15:00"
-            title: "Constraint-based In-Station Train Dispatching"
-            speaker: "Andreas Schutt, Matteo Cardellini, Jip J. Dekker, Daniel Harabor, Marco Maratea, Mauro Vallati"
-      - time: "15:00–15:30"
-        title: "Coffee/tea break"
-        room: "Foyer"
-        kind: break
-      - time: "15:30–17:00"
-        title: "Session 11 - Learning, Algorithm Configuration and MDPs"
-        room: "Forum 3"
-        talks:
-          - time: "15:30–15:50"
-            title: "Accelerated Discovery of Set Cover Solutions via Graph Neural Networks"
-            speaker: "Zohair Shafi, Benjamin A. Miller, Tina Eliassi-Rad, Rajmonda S. Caceres"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_12"
-          - time: "15:50–16:10"
-            title: "On the Efficiency of Algebraic Simplex Algorithms for Solving MDPs"
-            speaker: "Dibyangshu Mukherjee, Shivaram Kalyanakrishnan"
-            doi: "https://doi.org/10.1007/978-3-031-95976-9_8"
-          - time: "16:10–16:30"
-            title: "Bounded-Error Policy Optimization for Mixed Discrete-Continuous MDPs via Constraint Generation in Nonlinear Programming"
-            speaker: "Michael Gimelfarb, Ayal Taitler, Scott Sanner"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_15"
-          - time: "16:30–16:50"
-            title: "Algorithm Configuration in Sequential Decision-Making"
-            speaker: "Luca Begnardi, Bart von Meijenfeldt, Yingqian Zhang, Willem van Jaarsveld, Hendrik Baier"
-            doi: "https://doi.org/10.1007/978-3-031-95973-8_6"
-      - time: "16:50–17:00"
-        title: "Closing Remarks"
-        chair: "Guido Tack"
-
+- label: Monday, 10 November 2025
+  sessions:
+  - title: Registration
+    time: From 08:00
+    room: Foyer
+    kind: admin
+  - title: Master Class
+    time: 08:45-10:00
+    room: Forum 3
+    chair: Buser Say
+    talks:
+    - time: 08:45-09:00
+      title: Opening Remarks
+      speaker: Buser Say
+      affiliation: Monash University
+    - time: 09:00–10:00
+      title: CP, AI and OR for Classical Planning (Part 1)
+      speaker: Malte Helmert and Florian Pommerening
+  - time: 10:00–10:30
+    title: Coffee/tea break
+    kind: break
+    room: Foyer
+  - title: Master Class
+    time: 10:30-11:30
+    room: Forum 3
+    talks:
+    - time: 10:30–11:30
+      title: CP, AI and OR for Classical Planning (Part 2)
+      speaker: Malte Helmert and Florian Pommerening
+  - title: Lunch Break
+    time: 11:30-13:00
+    kind: break
+  - title: Master Class
+    time: 13:00-15:00
+    room: Forum 3
+    chair: Buser Say
+    talks:
+    - time: 13:00-15:00
+      title: CP, AI and OR for MDP Planning
+      speaker: Scott Sanner
+  - time: 15:00–15:30
+    title: Coffee/tea break
+    kind: break
+    room: Foyer
+  - title: Master Class
+    time: 15:30-17:45
+    room: Forum 3
+    chair: Buser Say
+    talks:
+    - time: 15:30–17:30
+      title: CP, AI and OR for Path Planning
+      speaker: Edward Lam
+    - time: 17:30–17:45
+      title: Closing Remarks
+      speaker: Buser Say
+      affiliation: Monash University
+- label: Tuesday, 11 November 2025
+  sessions:
+  - title: Registration
+    time: From 08:00
+    room: Foyer
+    kind: admin
+  - time: 08:45–09:15
+    title: Opening Remarks
+    room: Forum 3
+    chair: Guido Tack
+  - title: Session 1 - Symmetry Breaking and Constraint Acquisition
+    time: 09:00–10:00
+    room: Forum 3
+    talks:
+    - time: 09:00–09:20
+      title: Breaking the Symmetries of Indistinguishable Objects
+      speaker: Mun See Chang, Ian P. Gent, Christopher Jefferson
+      doi: https://doi.org/10.1007/978-3-031-95973-8_10
+      abstract: Indistinguishable objects often occur when modelling problems in constraint
+        programming, as well as in other related paradigms. They occur when objects
+        can be viewed as being drawn from a set of unlabelled objects, and the only
+        operation allowed on them is equality testing. For example, the golfers in
+        the social golfer problem are indistinguishable. If we do label the golfers,
+        then any relabelling of the golfers in one solution gives another valid solution.
+        In this paper, we show how we can break the symmetries resulting from indistinguishable
+        objects. We show how these symmetries induce symmetries of types built from
+        indistinguishable objects, for example in a matrix indexed by indistinguishable
+        objects. We then show how the resulting symmetries can be broken correctly
+        and completely. As the method can be prohibitively expensive, we also study
+        methods for breaking the symmetry only partially. In Essence , a high-level
+        modelling language, indistinguishable objects are encapsulated in ‘unnamed
+        types’. We provide an implementation to automatically break symmetries of
+        unnamed types.
+    - time: 09:20–09:40
+      title: Breaking Symmetries from a Set-Covering Perspective
+      speaker: Michael Codish, Mikolas Janota
+      doi: https://doi.org/10.1007/978-3-031-95973-8_11
+      abstract: We formalize symmetry breaking as a set-covering problem. For the
+        case of breaking symmetries on graphs, a permutation covers a graph if applying
+        it to the graph yields a smaller graph in a given order. Canonical graphs
+        are those that cannot be made smaller by any permutation. A complete symmetry
+        break is then a set of permutations that covers all non-canonical graphs.
+        A complete symmetry break with a minimal number of permutations can be obtained
+        by solving an optimal set-covering problem. The challenge is in the sizes
+        of the corresponding set-covering problems and in how these can be tamed.
+        The set-covering perspective on symmetry breaking opens up a range of new
+        opportunities deriving from decades of studies on both precise and approximate
+        techniques for this problem. Application of our approach leads to optimal
+        LexLeader symmetry breaks for graphs of order \(n\le 10\) as well as to partial
+        symmetry breaks which improve on the state-of-the-art.
+    - time: 09:40–10:00
+      title: Acquiring and Selecting Implied Constraints with an Application to the
+        BinSeq and Partition Global Constraints
+      speaker: Jovial Cheukam Ngouonou, Ramiz Gindullin, Claude-Guy Quimper, Nicloas
+        Beldiceanu, Rémi Douence
+      doi: https://doi.org/10.1007/978-3-031-95976-9_10
+      abstract: We propose a machine-assisted approach to synthesise implied constraints
+        for global constraints based on combinatorial objects. By reusing the Bound
+        Seeker (BS) [ 8 ], we generate thousands of relationships between features.
+        We present a scalable algorithm that automatically selects the relationships
+        that filter the most, which we manually prove. We consider the Partition and
+        the BinSeq constraints, which model the different ways of dividing a collection
+        of objects into clusters, or the repartition of shifts in a 0–1 sequence.
+        We use Partition and BinSeq in the Balanced Academic Curriculum Problem (BACP),
+        and the Balanced Shift-Scheduling Problem (BSSP), where we optimise the distribution
+        of the work to balance the workload. For 2 models of the BACP and 2 models
+        of the BSSP, we show how the filtering inferred by the BS improves the cost
+        of the solution found on different solvers. This filtering proved optimality
+        for all CSPLib instances of the BACP.
+  - time: 10:00–10:30
+    title: Coffee/tea break
+    room: Foyer
+    kind: break
+  - time: 10:30–11:30
+    title: Session 2 - Invited Talk
+    room: Forum 3
+    talks:
+    - time: 10:30–11:30
+      title: Invited Talk
+      speaker: Louis-Martin Rousseau
+  - time: 11:30–11:50
+    title: Session 3 - Extended Abstracts
+    room: Forum 3
+    talks:
+    - time: 11:30–11:40
+      title: Enhancing Beam Search with Machine Learning for Resource-Constrained
+        Shortest Path Reformulation of Combinatorial Optimization Problems
+      speaker: Fulin Yan
+      type: abstract
+    - time: 11:40–11:50
+      title: 'PINCHD: An Integrated Algorithm for Large-scale Maximum Weighted Independent
+        Set Problems'
+      speaker: Linhao Luo, Hue Chi Lam, Vicky Mak-Hau
+      type: abstract
+  - time: 12:00–13:30
+    title: Lunch break
+    kind: break
+  - time: 13:30–15:00
+    title: 'Session 4 - Applications: Scheduling and resource allocation in industry,
+      healthcare, sustainability'
+    room: Forum 3
+    talks:
+    - time: 13:30–13:50
+      title: Optimized Scheduling of Medical Appointment Sequences using Constraint
+        Programming
+      speaker: George Assaf, Sven Löffler, Petra Hofstedt
+      doi: https://doi.org/10.1007/978-3-031-95973-8_1
+      abstract: We propose a novel constraint-based model to efficiently tackle the
+        medical appointment sequence scheduling problem (MASSP), inspired by a real-world
+        problem at Charité – Universitätsmedizin Berlin . In many practical medical
+        scenarios, scheduling a sequence of appointments, rather than a single appointment,
+        has become increasingly essential for patients undergoing multi-stage treatments.
+        The goal of the MASSP is to identify a set of medical resources with sufficient,
+        consecutive, and available time slots in their calendars to create a sequence
+        of appointments for effectively managing a treatment plan. The problem comprises
+        various constraints, including the availability of both the intended patient
+        and required medical resources, as well as the time and resource dependencies
+        among the individual appointments that constitute the sequence. To address
+        this, we formulate the problem as a constraint optimization problem ( \(\mathcal
+        {COP}\) ) that not only captures the basic constraints of the MASSP but also
+        optimizes resource assignment to ensure a fair workload distribution within
+        the medical facility. The results of our experiments demonstrate that the
+        model performs effectively under diverse conditions, which confirms the utility
+        and robustness of the proposed model in optimizing resource allocation and
+        ensuring equitable workload distribution.
+    - time: 13:50–14:10
+      title: An integrated optimisation method for aluminium hot rolling
+      speaker: Ioannis Avgerinos, Apostolos Besis, Ioannis Mourtos, Athanasios Psarros,
+        Stavros Vatikiotis, Georgios Zois
+      doi: https://doi.org/10.1007/978-3-031-95973-8_2
+      abstract: This paper addresses the scheduling of aluminium slabs in a hot rolling
+        mill, which is a critical stage in aluminium rolling. Hot rolling defines
+        a challenging variant of flowshop scheduling because of multiple side constraints
+        imposed by quality specifications plus the need for synchronization with the
+        preceding stage where slabs are preheated in furnaces. An additional complication
+        arises from the objective of minimizing succession penalties in the rolling
+        mill, in order to maximise roll quality. Current practices group slabs into
+        batches and then schedule batches to reduce succession penalties and avoid
+        idle times during the transition from preheating to hot rolling. Motivated
+        by the operational requirements of a leading EU manufacturer of aluminium
+        rolled products, we propose a novel approach that replaces the conventional
+        batching approach by treating each aluminium slab individually. The aim is
+        to expand the range of potential successions in the hot rolling mill and thus
+        further reduce the sum of succession penalties. To formalise a set of elaborate
+        (hard and soft) constraints, we introduce a Mixed Integer Linear Programming
+        model for both the hot rolling and assignment of slabs to furnaces, and a
+        Constraint Programming model for the precise schedule computation of each
+        slab. These models are optimised sequentially to obtain a schedule (a ‘production
+        cycle’) given a set of available slabs. Experiments on real inventory data
+        demonstrate that the proposed approach significantly reduces the total succession
+        penalties, while avoiding idle times between preheating and rolling. Therefore,
+        our study could enhance production planning and scheduling for aluminium rolling.
+    - time: 14:10–14:30
+      title: Reducing Income Variability in Natural Resource Portfolios via Integer
+        Programming
+      speaker: Laura Greenstreet, Qinru Shi, Marc Grimson, Franz W. Simon, Suresh
+        A. Sethi, Carla P. Gomes, David B. Shmoys
+      doi: https://doi.org/10.1007/978-3-031-95976-9_2
+      abstract: Alaskan fishing communities are heavily impacted by income variability,
+        where studies suggest benefits to individuals and communities through diversification
+        by participating in multiple fisheries. However, Alaska uses a limited entry
+        permit system, allowing only a fixed number of individuals to participate
+        in each fishery. This motivates a resource allocation problem to determine
+        how to allocate fishing permits to minimize a global measure of income variability.
+        Further, experts and policy makers are interested in what interventions are
+        most effective for enabling diversification. In collaboration with Alaskan
+        fisheries experts, we developed a quadratic constrained resource allocation
+        problem to reduce community-level income variability and model financial and
+        vocational training interventions. Using over 20 years of fisheries data,
+        we demonstrate an integer programming approach can solve instances up to the
+        state level, involving over 10,000 permits and 170 communities. The model
+        shows the potential for a 30–75% reduction in community-level average fishery
+        income variance and provides a flexible framework for resource managers to
+        explore the impacts of financial and vocational training interventions to
+        support natural resource portfolio adaptation.
+    - time: 14:30–14:40
+      title: 'Real-Time Surgery Scheduling under Uncertainty: A Markov Decision Process
+        Approach'
+      speaker: Hajar Sadegh Zadeh
+    - time: 14:40–14:50
+      title: Constraint Optimisation Programming of Frequency-Based Designs for Response
+        Surface Metamodelling
+      speaker: Andrew Gill, David Marlow, Susan M. Sanchez, Paul J. Sanchez
+  - time: 15:00–15:30
+    title: Coffee/tea break
+    room: Foyer
+    kind: break
+  - time: 15:30–17:00
+    title: Session 5 - Reinforcement Learning and Learning Heuristics
+    room: Forum 3
+    talks:
+    - time: 15:30–15:50
+      title: Reinforcement Learning-based Heuristics to Guide Domain-Independent Dynamic
+        Programming
+      speaker: Minori Narita, Ryo Kuroiwa, J. Christopher Beck
+      doi: https://doi.org/10.1007/978-3-031-95976-9_9
+      abstract: 'Domain-Independent Dynamic Programming (DIDP) is a state-space search
+        paradigm based on dynamic programming for combinatorial optimization. In its
+        current implementation, DIDP guides the search using user-defined dual bounds.
+        Reinforcement learning (RL) is increasingly being applied to combinatorial
+        optimization problems and shares several key structures with DP, being represented
+        by the Bellman equation and state-based transition systems. We propose using
+        reinforcement learning to obtain a heuristic function to guide the search
+        in DIDP. We develop two RL-based guidance approaches: value-based guidance
+        using Deep Q-Networks and policy-based guidance using Proximal Policy Optimization.
+        Our experiments indicate that RL-based guidance significantly outperforms
+        standard DIDP and problem-specific greedy heuristics with the same number
+        of node expansions. Further, despite longer node evaluation times, RL guidance
+        achieves better run-time performance than standard DIDP on three of four benchmark
+        domains.'
+    - time: 15:50–16:10
+      title: Shaping Reward Signals in Reinforcement Learning Using Constraint Programming
+      speaker: Chao Yin, Quentin Cappart, Gilles Pesant
+      doi: https://doi.org/10.1007/978-3-031-95976-9_16
+      abstract: Reinforcement learning is a machine learning paradigm in which an
+        agent learns through interaction a policy, that is what sequence of actions
+        to take in some environment in order to maximize the reward it receives. Reward
+        shaping modifies the reward function in an attempt to accelerate agent training.
+        Under some conditions, potential-based reward shaping ( pbrs ) preserves the
+        optimal policies of the original problem. We propose a pbrs method that automatically
+        derives shaped rewards from a constraint programming ( cp ) model of the environment
+        and from the probability mass functions over the domains of its variables,
+        as provided by the cp bp framework. In the context of an ai planning task,
+        we investigate the effect of cp modeling choices on the effectiveness of our
+        reward shaping method. Our experiments show that our method significantly
+        shortens training while being rather insensitive to modeling choices, and
+        that the resulting agent’s performance scales well beyond instance sizes seen
+        during training.
+    - time: 16:10–16:30
+      title: Learning Primal Heuristics for 0-1 Knapsack Interdiction Problems
+      speaker: Luca Ferrarini, Stefano Gualandi, Letizia Moro, Axel Parmentier
+      doi: https://doi.org/10.1007/978-3-031-95973-8_14
+      abstract: 'In interdiction problems, two opposing decision-makers act sequentially:
+        the leader plays first by selecting items to restrict the choices of the follower,
+        while the follower selects those that maximize her profit from the remaining
+        items. In knapsack interdiction, both decision-makers face different budget
+        constraints. We propose a heuristic based on a single-level approximation
+        of the leader-follower problem that we interpret as a combinatorial optimization
+        layer in a machine learning pipeline. The ML pipeline includes a Generalized
+        Linear Model as the first layer, which predicts the parameters of the single-level
+        problem. Using a perturbation approach, we regularize the single-level problem,
+        which enables to make it differentiable and provides a natural loss to train
+        the model. Once trained, the pipeline provides effective ordering heuristics
+        to solve Knapsack Interdiction problems. Extensive computational results on
+        benchmarks from the literature show that the learned ML-based primal heuristics
+        are extremely fast and compute solutions with a small optimality gap.'
+    - time: 16:30–16:50
+      title: Self-Supervised Penalty-Based Learning for Robust Constrained Optimization
+      speaker: Wyame Benslimane, Paul Grigas
+      doi: https://doi.org/10.1007/978-3-031-95973-8_7
+      abstract: 'We propose a new methodology for parameterized constrained robust
+        optimization, an important class of optimization problems under uncertainty,
+        based on learning with a self-supervised penalty-based loss function. Whereas
+        supervised learning requires pre-solved instances for training, our approach
+        leverages a custom loss function derived from the exact penalty method in
+        optimization to learn an approximation, typically defined by a neural network
+        model, of the parameterized optimal solution mapping. Additionally, we adapt
+        our approach to robust constrained combinatorial optimization problems by
+        incorporating a surrogate linear cost over mixed integer domains, and a smooth
+        approximations thereof, into the final layer of the network architecture.
+        We perform computational experiments to test our approach on three different
+        applications: multidimensional knapsack with continuous variables, combinatorial
+        multidimensional knapsack with discrete variables, and an inventory management
+        problem. Our results demonstrate that our self-supervised approach is able
+        to effectively learn neural network approximations whose inference time is
+        significantly smaller than the computation time of traditional solvers for
+        this class of robust optimization problems. Furthermore, our results demonstrate
+        that by varying the penalty parameter we are able to effectively balance the
+        trade-off between sub-optimality and robust feasibility of the obtained solutions.'
+    - time: 16:50–17:00
+      title: Constrained Sequential Inference in Machine Learning Using Constraint
+        Programming
+      speaker: Virasone Manibod, David Saikali, Gilles Pesant
+  - time: 18:00–20:00
+    title: Opening Reception
+    kind: social
+- label: Wednesday, 12 November 2025
+  sessions:
+  - title: Registration
+    time: From 08:00
+    room: Foyer
+    kind: admin
+  - time: 09:00–10:00
+    title: Invited Talk (joint with ICAPS)
+    room: Forum
+    talks:
+    - time: 09:00–10:00
+      title: Invited Talk (details coming soon)
+      speaker: Hanna Kurniawati
+      note: <a href='https://icaps25.icaps-conference.org/program/keynotes/'>See
+        ICAPS program page for details</a>
+  - time: 10:00–10:30
+    title: Coffee/tea break
+    room: Foyer
+    kind: break
+  - time: 10:30–12:00
+    title: 'Session 6 - Applications: Satellites and UAVs'
+    room: Forum 3
+    talks:
+    - time: 10:30–10:50
+      title: 'Time-dependent Orienteering for High Altitude UAVs to Monitor Greenhouse
+        Gases:  Mixed Integer Programming vs. Monte Carlo Tree Search'
+      speaker: Richard Levinson, Vinay Ravindra, Jeremy Frank, Meghan Saephan
+      doi: https://doi.org/10.1007/978-3-031-95976-9_6
+      abstract: 'Novel Earth observing systems aim to leverage newly developed Uncrewed
+        Aerial Vehicles (UAVs) to provide higher resolution spatio-temporal data than
+        is currently available through satellite, crewed flights, or in-situ sensors,
+        for many climate science applications. The Intelligent Long Endurance Earth
+        Observing System (ILEOS) provides science activity planning for obtaining
+        higher quality spatio-temporal data from UAVs. ILEOS fuses coarse-grained
+        data available from satellites and other sources to identify high value science
+        targets, and produces flight plans for high altitude long endurance (HALE)
+        UAVs, choosing which targets to observe to maximize science return. ILEOS
+        uses a variant of the Orienteering Problem with time-dependent science reward
+        values, with novel extensions to model vehicle turn times and no fly zones.
+        Two solution methods are presented: Mixed Integer Linear Programming (MILP)
+        and Monte Carlo Tree Search (MCTS). Experiments are conducted to compare their
+        performance on six real-world scenarios. Results show that MCTS often outperforms
+        a leading MILP solver.'
+    - time: 10:50–11:10
+      title: Integer and Constraint Programming for the Offline Nanosatellite Partition
+        Scheduling Problem
+      speaker: Julien Rouzot, Mickaël Pereira, Christian Artigues, Romain Boyer, Frédéric
+        Camps, Philippe Garnier, Emmanuel Hebrard, Pierre Lopez
+      doi: https://doi.org/10.1007/978-3-031-95976-9_11
+      abstract: 'Effective scheduling of tasks for nanosatellites is essential, given
+        their limited onboard resources and capabilities. In a typical nanosatellite
+        mission, the onboard computer has to run payload tasks linked to the mission
+        objective, such as observations and measurements for science campaigns, but
+        also communication and avionic tasks needed for navigation and safety. We
+        consider a partitioned real-time system where a partition is a job that embeds
+        a set of elementary tasks implementing one of the above-described functions.
+        The offline nanosatellite partition scheduling problem consists in scheduling
+        a set of partitions on a singlecore processor within a fixed time frame that
+        will be repeated cyclically, while maximizing the number and duration of scheduled
+        payload partitions. The paper first establishes similarities and differences
+        with related scheduling problems. We then prove that the problem is strongly
+        NP-hard. A Mixed Integer Linear Programming (MILP) matheuristic and a Constraint
+        Programming (CP) model are proposed. We compare the MILP and CP approaches
+        in a multi-objective context and demonstrate the relevance of the latter to
+        solve the problem efficiently both on randomly generated instances and on
+        a real nanosatellite case study of the University Space Center of Toulouse:
+        the NIMPH project. The CP model is embedded in NanoSatScheduler, an open source
+        software with a user interface designed for the offline nanosatellite partition
+        scheduling problem. For the NIMPH real-case study, the proposed solution outperforms
+        the semi-manual approach used so far. As a result, the NIMPH team has adopted
+        NanoSatScheduler as an operational tool for their mission.'
+    - time: 11:10–11:30
+      title: Hybridizing Machine Learning and Optimization for Planning Satellite
+        Observations
+      speaker: Romain Barrault, Cédric Pralet, Gauthier Picard, Eric Sawyer
+      doi: https://doi.org/10.1007/978-3-031-95973-8_5
+      abstract: Planning the activities of an Earth observation satellite is a highly
+        combinatorial task. It consists in regularly computing the sequence of observations
+        to be performed by a satellite to collect images of candidate points of interest
+        (POIs), while taking into account the time-dependent maneuvers required to
+        point the satellite to the successive POIs. To solve such a recurrent optimization
+        problem, we propose a novel approach that exploits offline learning techniques
+        to approximate scheduling feasibility for sets of observation tasks. For this,
+        we build a 0/1 neural network classifier whose inputs are related to the geographical
+        positions of the POIs to be observed over the satellite orbit. We also learn
+        hard capacity constraints limiting the number of observable POIs within orbit
+        portions of various sizes. Finally, we introduce a hybrid algorithm, called
+        HySSEO , optimizing the observation schedules based on a two-step process.
+        The latter first searches for an optimal selection of POIs given the learned
+        constraints, and then exploits this selection to bootstrap the search for
+        an optimal schedule satisfying detailed time-dependent transition constraints.
+        This hybrid optimization approach significantly improves the solution quality
+        when compared to a standard scheduling approach.
+    - time: 11:30–11:50
+      title: Satellite Communication Resources Management in a Earth Observation Federation
+        of Constellations
+      speaker: Henoïk Willot, Jean-Loup Farges, Gauthier Picard, Philippe Pavero
+      doi: https://doi.org/10.1007/978-3-031-95976-9_15
+      abstract: This paper addresses a new problem arising from the novel concept
+        of multi-mission federation in Earth observation. This problem arises because
+        of the development of several competing ground station networks that could
+        be used by a component of federated missions called Satellite Communication
+        and Resource Management System (SCRMS). Among the functions of SCRMS selection
+        of contacts is a challenging decision problem. It is an optimization problem
+        with Boolean variables corresponding to the selection of some contacts among
+        potential contacts. Constraints enforce the fulfillment of the communication
+        needs of the satellites. The considered criteria are the communication cost
+        and the conflicts and jamming between satellites when communicating with sites,
+        optimized lexicographically. We propose a linear program, several incomplete
+        search schemes and greedy allocation schemes to address this problem, and
+        evaluate them on realistic systems. Results indicate that the linear program
+        complies with computation time requirements and produces better contact selection
+        plans than other optimization schemes.
+  - time: 12:00–13:30
+    title: Lunch break
+    kind: break
+  - time: 13:30–15:00
+    title: Session 7 - Solving Technology
+    room: Forum 3
+    talks:
+    - time: 13:30–13:50
+      title: Revisiting Pseudo-Boolean Encodings from an Integer Perspective
+      speaker: Hendrik Bierlee, Jip J. Dekker, Peter J. Stuckey
+      doi: https://doi.org/10.1007/978-3-031-95973-8_8
+      abstract: Traditionally, SAT encodings of complex constraints, such as linear
+        constraints or more specifically PB constraints, are specified in terms of
+        Boolean variables and clauses. However, often sets of related Boolean variables
+        are either encodings of integer variables, or act as if they were. Furthermore,
+        any encoding of linear constraints has to encode partial sums, and these are
+        integers (even if the encoding does not explicitly notice this). By formally
+        specifying the SAT encoding using integer variables and constraints, coupled
+        with a procedure to encode this specification into SAT, we can gain some more
+        insight into the encoding methods, and compose new ones. Experiments using
+        these integer-driven encodings show that they can improve on standard approaches
+        to encoding PB and integer linear constraints to SAT.
+    - time: 13:50–14:10
+      title: Parallelising Lazy Clause Generation with Trail Sharing
+      speaker: Toby O. Davies, Frédéric Didier, Laurent Perron, Peter J. Stuckey
+      doi: https://doi.org/10.1007/978-3-031-95973-8_13
+      abstract: 'We investigate the effectiveness of splitting the search space in
+        parallelising the state-of-the-art CP-SAT solver. One of the key barriers
+        to effective search-space splitting in learning solvers is the generated sub-problems
+        are not independent, leading to substantial communication-related overhead,
+        substantial redundant work, or both. Our contributions attempt to mitigate
+        this issue: job reassignment; and trail sharing. Jobs (sub-trees) are reassigned
+        to new workers if the clause database of the currently assigned worker appears
+        ill-suited to the region of the search-space, when doing so workers can share
+        some of the state from their local trail. We argue a trail prefix can be viewed
+        as a lossy compressed representation of much of the relevant information a
+        worker has learnt about a job, this information can be exploited by the next
+        worker assigned the same subtree to avoid some redundant work. We show these
+        approaches complement standard portfolio and clause-sharing approaches, improving
+        CP-SAT’s performance on MiniZinc challenge benchmarks with a moderate number
+        of worker threads. To enable these approaches, we also introduce “Buffered
+        Work Stealing,” which can be parameterised to emulate the two main existing
+        approaches to search-space splitting in the literature: Work Stealing and
+        Embarassingly Parallel Search, as well as an intermediate configuration between
+        these two extremes that slightly outperforms both.'
+    - time: 14:10–14:30
+      title: Analyzing the numerical correctness of branch-and-bound decisions for
+        mixed-integer programming
+      speaker: Alexander Hoen, Ambros Gleixner
+      doi: https://doi.org/10.1007/978-3-031-95976-9_3
+      abstract: 'Most state-of-the-art branch-and-bound solvers for mixed-integer
+        linear programming rely on limited-precision floating-point arithmetic and
+        use numerical tolerances when reasoning about feasibility and optimality during
+        their search. While the practical success of floating-point MIP solvers bears
+        witness to their overall numerical robustness, it is well-known that numerically
+        challenging input can lead them to produce incorrect results. Even when their
+        final answer is correct, one critical question remains: Were the individual
+        decisions taken during branch-and-bound justified, i.e., can they be verified
+        in exact arithmetic? In this paper, we attempt a first such a posteriori analysis
+        of a pure LP-based branch-and-bound solver by checking all intermediate decisions
+        critical to the correctness of the result: accepting solutions as integer
+        feasible, declaring the LP relaxation infeasible, and pruning subtrees as
+        suboptimal. Our computational study in the academic MIP solver SCIP confirms
+        the expectation that in the overwhelming majority of cases, all decisions
+        are correct. When errors do occur on numerically challenging instances, they
+        typically affect only a small, typically single-digit, amount of leaf nodes
+        that would require further processing.'
+    - time: 14:30–14:50
+      title: Determining the Most Promising Selective Backbone Size for Partial Knowledge
+        Compilation
+      speaker: Andrea Balogh, Guillaume Escamocher, Barry O'Sullivan
+      doi: https://doi.org/10.1007/978-3-031-95973-8_3
+      abstract: Knowledge compilation allows for quick retrieval of a wide variety
+        of information about an instance of a constraint satisfaction problem or Boolean
+        formula. Unfortunately, the compiled representation can be so large that it
+        cannot be used in practical settings, especially when there are restrictions
+        on the amount of available memory. It has been recently observed that assigning
+        some carefully chosen variables can significantly reduce the size of the representation,
+        with only a small loss of data about the instance. However determining how
+        many, and which, variables should be assigned to create a compact compiled
+        instance requires making a number of expensive computations, including completely
+        compiling the full initial instance, which might not be achievable for large
+        instances. Our work in this paper involves removing large compilations from
+        the process of constructing selective backbones. First we look at how statistical
+        properties of literals can be used as fast heuristics to pick which variable
+        to assign next. Then we show how the behaviour of selective backbones for
+        small instances can help determine the size at which selective backbones for
+        large instances are expected to offer the best compromise between the quantity
+        of knowledge lost and the amount of space saved. We also extend previous work
+        to take into account weighted preferences on models. This is beneficial since
+        various probabilistic models can be expressed in such terms.
+  - time: 15:00–15:30
+    title: Coffee/tea break
+    room: Foyer
+    kind: break
+  - time: 15:30–17:00
+    title: Session 8 - Machine Learning and Mixed Integer Programming
+    room: Forum 3
+    talks:
+    - time: 15:30–15:50
+      title: LLMs for Cold-Start Cutting Plane Separator Configuration
+      speaker: Connor Lawless, Yingxi Li, Anders Wikum, Madeleine Udell, Ellen Vitercik
+      doi: https://doi.org/10.1007/978-3-031-95976-9_4
+      abstract: Mixed integer linear programming (MILP) solvers ship with a staggering
+        number of parameters that are challenging to select a priori for all but expert
+        optimization users, but can have an outsized impact on the performance of
+        the MILP solver. Existing machine learning (ML) approaches to configure solvers
+        require training ML models by solving thousands of related MILP instances,
+        generalize poorly to new problem sizes, and often require implementing complex
+        ML pipelines and custom solver interfaces that can be difficult to integrate
+        into existing optimization workflows. In this paper, we introduce a new LLM-based
+        framework to configure which cutting plane separators to use for a given MILP
+        problem with little to no training data based on characteristics of the instance,
+        such as a natural language description of the problem and the associated formulation.
+        We augment these LLMs with descriptions of cutting plane separators available
+        in a given solver, grounded by summarizing the existing research literature
+        on separators. While individual solver configurations have a large variance
+        in performance, we present a novel ensembling strategy that clusters and aggregates
+        configurations to create a small portfolio of high-performing configurations.
+        Our LLM-based methodology requires no custom solver interface, can find a
+        high-performing configuration by solving only a small number of MILPs, and
+        can generate the configuration with simple API calls that run in under a second.
+        Numerical results show our approach is competitive with existing configuration
+        approaches on a suite of classic combinatorial optimization problems and real-world
+        datasets with only a fraction of the training data and computation time.
+    - time: 15:50–16:10
+      title: Multi-task Representation Learning for Mixed Integer Linear Programming
+      speaker: Junyang Cai, Taoan Huang, Bistra Dilkina
+      doi: https://doi.org/10.1007/978-3-031-95973-8_9
+      note: Best Paper Award
+      flag: Award
+      abstract: Mixed Integer Linear Programs (MILPs) are highly flexible and powerful
+        tools for modeling and solving complex real-world combinatorial optimization
+        problems. Recently, machine learning (ML)-guided approaches have demonstrated
+        significant potential in improving MILP-solving efficiency. However, these
+        methods typically rely on separate offline data collection and training processes,
+        which limits their scalability and adaptability. This paper introduces the
+        first multi-task learning framework for ML-guided MILP solving. The proposed
+        framework provides MILP embeddings helpful in guiding MILP solving across
+        solvers (e.g., Gurobi and SCIP) and across tasks (e.g., Branching and Solver
+        configuration). Through extensive experiments on three widely used MILP benchmarks,
+        we demonstrate that our multi-task learning model performs similarly to specialized
+        models within the same distribution. Moreover, it significantly outperforms
+        them in generalization across problem sizes and tasks.
+    - time: 16:10–16:30
+      title: 'PySCIPOpt-ML: Embedding Trained Machine Learning Models into Mixed-Integer
+        Programs'
+      speaker: Mark Turner, Antonia Chmiela, Thorsten Koch, Michael Winkler
+      doi: https://doi.org/10.1007/978-3-031-95976-9_14
+      abstract: A standard tool for modelling real-world optimisation problems is
+        mixed-integer programming (MIP). However, for many of these problems, information
+        about the relationships between variables is either incomplete or highly complex,
+        making it difficult or even impossible to model the problem directly. To overcome
+        these hurdles, machine learning (ML) predictors are often used to represent
+        these relationships and are then embedded in the MIP as surrogate models.
+        Due to the large amount of available ML frameworks and the complexity of many
+        ML predictors, formulating such predictors into MIPs is a highly non-trivial
+        task. In this paper, we introduce PySCIPOpt-ML, an open-source tool for the
+        automatic formulation and embedding of trained ML predictors into MIPs. By
+        directly interfacing with a broad range of commonly used ML frameworks and
+        an open-source MIP solver, PySCIPOpt-ML provides a way to easily integrate
+        ML constraints into optimisation problems. Alongside PySCIPOpt-ML, we introduce
+        SurrogateLIB, a library of MIP instances with embedded ML constraints, and
+        present computational results over SurrogateLIB, providing intuition on the
+        scale of ML predictors that can be practically embedded. The project is available
+        at https://github.com/Opt-Mucca/PySCIPOpt-ML .
+    - time: 16:30–16:50
+      title: Constrained Machine Learning Through Hyperspherical Representation
+      speaker: Gaetano Signorelli, Michele Lombardi
+      doi: https://doi.org/10.1007/978-3-031-95976-9_13
+      abstract: The problem of ensuring constraints satisfaction on the output of
+        machine learning models is critical for many applications, especially in safety-critical
+        domains. Modern approaches rely on penalty-based methods at training time,
+        which do not guarantee to avoid constraints violations; or constraint-specific
+        model architectures (e.g., for monotonocity); or on output projection, which
+        requires to solve an optimization problem that might be computationally demanding.
+        We present the Hypersherical Constrained Representation, a novel method to
+        enforce constraints in the output space for convex and bounded feasibility
+        regions (generalizable to star domains). Our method operates on a different
+        representation system, where Euclidean coordinates are converted into hyperspherical
+        coordinates relative to the constrained region, which can only inherently
+        represent feasible points. Experiments on a synthetic and a real-world dataset
+        show that our method has predictive performance comparable to the other approaches,
+        can guarantee \(100\%\) constraint satisfaction, and has a minimal computational
+        cost at inference time.
+    - time: 16:50–17:00
+      title: A Surrogate-Based Multi-Objective Optimization Framework with Uncertainty
+        Consideration
+      speaker: Jesica de Armas
+  - time: 18:30–23:00
+    title: Conference Banquet
+    room: Old Melbourne Gaol
+    kind: social
+- label: Thursday, 13 November 2025
+  sessions:
+  - title: Registration
+    time: From 08:00
+    room: Foyer
+    kind: admin
+  - time: 09:00–10:00
+    title: Invited Talk (joint with ICAPS)
+    room: Forum
+    talks:
+    - time: 09:00–10:00
+      title: Invited Talk (details coming soon)
+      speaker: Bistra Dilkina
+      note: <a href='https://icaps25.icaps-conference.org/program/keynotes/'>See
+        ICAPS program page for details</a>
+  - time: 10:00–10:30
+    title: Coffee/tea break
+    room: Foyer
+    kind: break
+  - time: 10:30–12:00
+    title: 'Session 9 - Applications: Manufacturing and Laboratory Scheduling'
+    room: Forum 3
+    talks:
+    - time: 10:30–10:50
+      title: Modeling and Solving the Generalized Test Laboratory Scheduling Problem
+      speaker: Philipp Danzinger, Tobias Geibinger, Florian Mischek, Nysret Musliu
+      doi: https://doi.org/10.1007/978-3-031-95973-8_12
+      abstract: The Test Laboratory Scheduling Problem (TLSP) is an NP-hard scheduling
+        problem based on the real-world scheduling requirements of an industrial test
+        laboratory. TLSP requires the solver to find a grouping of tasks into jobs,
+        and to schedule those jobs, assigning resources of different types (employees,
+        workbenches, and equipment) and optimizing different soft constraints. Over
+        time, new real-world scheduling requirements have emerged that necessitate
+        a more flexible description of resources. To deal with such situations, in
+        this paper, we propose Generalized TLSP (G-TLSP), a new problem extension
+        of TLSP which unifies different resource types. To solve G-TLSP, we propose
+        a new Constraint Programming (CP) model and solve instances with exact CP
+        solvers as well as with a Very Large Neighborhood Search (VLNS) algorithm.
+        Our approaches are evaluated on existing instances as well as two new real-world
+        instances. We achieve competitive performance with existing specialized solvers
+        on converted TLSP instances and find high-quality solutions for the new real-world
+        instances.
+    - time: 10:50–11:10
+      title: Minimising Source-Plate Swaps for Robotised Compound Dispensing in Microplates
+      speaker: Ramiz Gindullin, Brinton Seashore-Ludlow, Ola Spjuth
+      doi: https://doi.org/10.1007/978-3-031-95973-8_16
+      abstract: Liquid-handling instruments are indispensable tools in modern biomedical
+        laboratories, streamlining compound and sample management tasks with precision
+        and efficiency. Compound dispensing from large chemical libraries divided
+        over hundreds of microwell plates can require substantial swapping of plates,
+        particularly if compounds from multiple source plates are to be dispensed
+        in each destination plate. Despite robotisation, plate swapping is a time-consuming
+        necessity for high-throughput experiments, posing a significant bottleneck.
+        In this paper, we explore the application of constraint programming (CP) to
+        the planning of liquid-handling tasks to minimise plate swaps in automated
+        dispensing. We formulate the problem as a combination of a set partitioning
+        problem and the construction of a bipartite network. We present six CP models
+        implemented in MiniZinc and evaluate their performance on synthetic benchmarks
+        using three state-of-the-art constraint solvers. This work highlights the
+        potential of CP to enhance the scalability and efficiency of automated compound
+        transfer systems.
+    - time: 11:10–11:30
+      title: A Dynamic Programming Approach for the Job Sequencing and Tool Switching
+        Problem
+      speaker: Emma Legrand, Vianney Copp, Daniele Catanzaro, Pierre Schaus
+      flag: Award
+      note: Best Student Paper Award
+      doi: https://doi.org/10.1007/978-3-031-95976-9_5
+      abstract: We present a new dynamic programming-based exact solution algorithm
+        for the Job Sequencing and Tool Switching Problem (JS-TSP), a combinatorial
+        optimization problem originating from manufacturing systems and encompassing
+        the Traveling Salesman Problem as a special case. We propose a new family
+        of lower bounds for the optimal solution to the problem, which are provably
+        tighter than existing bounds in the literature and enhance both solution quality
+        and pruning efficiency. We propose the use of A* and its anytime variants
+        to explore the solution space of the problem as well as a specific data structure,
+        called FreeTools , both to keep track of the state information and to compute
+        incremental costs throughout the implicit search efficiently. Extensive computational
+        experiments show that the presented approach brings significant performance
+        improvements over state-of-the-art methods for the JS-TSP, including branch-and-bound
+        and integer linear programming formulations.
+    - time: 11:30–11:40
+      title: 'A Simplified Model for Marker-Assisted Gene Pyramiding: Minimising Generations
+        and Crossings'
+      speaker: Kelvin Davis, Pierre Le Bodic, Andreas T Ernst
+    - time: 11:40–11:50
+      title: The Edge-based Contiguous p-median Problem with Connections to Logistics
+        Districting
+      speaker: Adolfo R. Escobedo
+  - time: 12:00–13:30
+    title: Lunch break
+    kind: break
+  - time: 13:30–15:00
+    title: 'Session 10 - Applications: Transport and Power Systems'
+    room: Forum 3
+    talks:
+    - time: 13:30–13:50
+      title: A Column Generation Heuristic for Multi-depot Electric Bus Scheduling
+      speaker: Yoann Sabatier Montanaro, Thomas Jacquet, Quentin Cappart, Guy Desaulniers
+      doi: https://doi.org/10.1007/978-3-031-95976-9_7
+      abstract: 'In public transit, the multi-depot electric vehicle scheduling problem
+        (MDEVSP) involves assigning a fleet of electric buses to a set of timetabled
+        trips while addressing constraints related to battery recharging. A common
+        approach to solving this problem leverages column generation, wherein a master
+        problem identifies a base solution, and subproblems generate additional schedules
+        to enhance it. These subproblems are often modeled as shortest path problems
+        on a graph, where nodes represent trips and potential recharging opportunities.
+        Prior works have used time-space networks with dynamic selection of recharging
+        opportunities. However, this network type introduces practical limitations,
+        such as the inability to enforce ad-hoc constraints on trip sequences. Recently,
+        Gerbaux et al. (2025) proposed a machine-learning-based method to accelerate
+        the resolution of the subproblems by heuristically reducing their size. While
+        effective, this approach raises concerns in industrial applications, including
+        data privacy for customers and compliance with legal regulations. In this
+        context, we propose a novel approach to model the subproblems within a column-generation-based
+        algorithm for the MDEVSP. Our contributions are as follows: (1) A new graph
+        formulation that preselects recharging opportunities, offering greater flexibility
+        in trip assignment and enabling the integration of ad-hoc constraints; (2)
+        A constructive meta-heuristic, based on a greedy randomized adaptive search
+        procedure , to reduce the subproblem size without relying on machine learning
+        or historical data; (3) Additional pruning rules to further reduce the subproblem
+        size. Experimental results, conducted on hundreds of realistic instances derived
+        from real bus lines in Montreal, show that our approach achieves comparable
+        performance to the state-of-the-art method by Gerbaux et al. (2025), while
+        avoiding the use of machine learning.'
+    - time: 13:50–14:10
+      title: Combining Constraint Programming and Metaheuristics for Aircraft Maintenance
+        Routing with a Distribution Objective
+      speaker: Ida Gjergji, Lucas Kletzander, Hendrik Bierlee, Nysret Musliu, Peter
+        J. Stuckey
+      doi: https://doi.org/10.1007/978-3-031-95976-9_1
+      abstract: In this paper we focus on a challenging version of the aircraft maintenance
+        routing problem (AMRP) with a maintenance distribution objective (AMRP-D).
+        For the AMRP-D, the flight legs with predefined start and end times are assigned
+        to aircraft. In addition to the assigned flight legs, each aircraft has to
+        satisfy certain regulations regarding the maintenance services that are mandatory
+        in the scheduling period, while the maintenance should also be distributed
+        evenly. We propose a two stage approach, where first we use a decomposition
+        method that is solved using constraint programming, to cover the flight legs.
+        To optimize the distribution objective, we propose two metaheuristic techniques
+        based on Large Neighborhood Search (LNS) and Simulated Annealing (SA). The
+        LNS method consists of different destroy operators and as repairer we use
+        a constraint programming (CP) solver. The SA approach includes a novel neighborhood
+        to deal with the distribution objective. Our experimental results show that
+        the decomposition method is able to solve more instances than the exact approach,
+        while SA provides better quality solutions for the optimization stage compared
+        to LNS.
+    - time: 14:10–14:30
+      title: Leveraging Quantum Computing for Accelerated Classical Algorithms in
+        Power Systems Optimization
+      speaker: Rosemary Barrass, Harsha Nagarajan, Carleton Coffrin
+      doi: https://doi.org/10.1007/978-3-031-95973-8_4
+      abstract: The recent advent of commercially available quantum annealing hardware
+        (QAH) has expanded opportunities for research into quantum annealing-based
+        algorithms. In the domain of power systems, this advancement has driven increased
+        interest in applying such algorithms to mixed-integer problems (MIP) like
+        Unit Commitment (UC). UC focuses on minimizing power generator operating costs
+        while adhering to physical system constraints. Grid operators solve UC instances
+        daily to meet power demand and ensure safe grid operations. This work presents
+        a novel hybrid algorithm that leverages quantum and classical computing to
+        solve UC more efficiently. We introduce a novel Benders-cut generation technique
+        for UC, thereby enhancing cut quality, reducing expensive quantum-classical
+        hardware interactions, and lowering qubit requirements. Additionally, we incorporate
+        a k -local neighborhood search technique as a recovery step to ensure a higher
+        quality solution than current QAH alone can achieve. The proposed algorithm,
+        QC4UC, is evaluated on a modified instance of the IEEE RTS-96 test system.
+        Results from both a simulated annealer and real QAH are compared, demonstrating
+        the effectiveness of this algorithm in reducing qubit requirements and producing
+        near-optimal solutions on noisy QAH.
+    - time: 14:30–14:50
+      title: Dynamic Discretization Discovery for Drone-Assisted Vehicle Routing Problem
+        with Time Windows
+      speaker: Zihan Zhang, Edward Lam, Pierre Le Bodic
+    - time: 14:50–15:00
+      title: Constraint-based In-Station Train Dispatching
+      speaker: Andreas Schutt, Matteo Cardellini, Jip J. Dekker, Daniel Harabor, Marco
+        Maratea, Mauro Vallati
+  - time: 15:00–15:30
+    title: Coffee/tea break
+    room: Foyer
+    kind: break
+  - time: 15:30–17:00
+    title: Session 11 - Learning, Algorithm Configuration and MDPs
+    room: Forum 3
+    talks:
+    - time: 15:30–15:50
+      title: Accelerated Discovery of Set Cover Solutions via Graph Neural Networks
+      speaker: Zohair Shafi, Benjamin A. Miller, Tina Eliassi-Rad, Rajmonda S. Caceres
+      doi: https://doi.org/10.1007/978-3-031-95976-9_12
+      abstract: Machine learning (ML) approaches are increasingly being used to accelerate
+        combinatorial optimization (CO) problems. We investigate the Set Cover Problem
+        (SCP) and propose Graph-SCP, a graph neural network method that augments existing
+        optimization solvers by learning to identify a smaller sub-problem that contains
+        the solution space. Graph-SCP uses both supervised learning from prior solved
+        instances and unsupervised learning to minimize the SCP objective. We evaluate
+        the performance of Graph-SCP on synthetically weighted and unweighted SCP
+        instances with diverse problem characteristics and complexities, and on instances
+        from the OR Library, a canonical benchmark for SCP. We show that Graph-SCP
+        reduces the problem size by 60–80% and achieves runtime speedups of up to
+        10x on average when compared to Gurobi (a state-of-the-art commercial solver),
+        while maintaining solution quality. This is in contrast to fast greedy solutions
+        that significantly compromise solution quality to achieve guaranteed polynomial
+        runtime. We showcase Graph-SCP’s ability to generalize to larger problem sizes,
+        training on SCP instances with up to 3,000 subsets and testing on SCP instances
+        with up to 10,000 subsets.
+    - time: 15:50–16:10
+      title: On the Efficiency of Algebraic Simplex Algorithms for Solving MDPs
+      speaker: Dibyangshu Mukherjee, Shivaram Kalyanakrishnan
+      doi: https://doi.org/10.1007/978-3-031-95976-9_8
+      abstract: 'Markov Decision Problems (MDPs) are a widely-used abstraction of
+        sequential decision-making. A policy specifies an action to take from each
+        state of the MDP. Every MDP has an optimal policy, which maximises the expected
+        long-term reward from each starting state. A well-known approach to compute
+        an optimal policy for a given MDP is by solving an induced Linear Program
+        (LP). This paper establishes the computational efficiency of a family of “Algebraic
+        Simplex” (AS) algorithms for solving these induced LPs. Unlike geometric methods
+        that rely on quantities such as “value”, “gain”, or “flux”, AS algorithms
+        query policies sequentially for the discrete set of locally-improving state-action
+        pairs. We provide upper bounds on the complexity of AS algorithms in three
+        settings: (1) when there are many more states than actions, (2) when there
+        are many more actions than states, and (3) when transitions are deterministic.
+        For all three cases, we furnish AS algorithms with running-time upper bounds
+        that are within a polynomial factor of the tightest known yet across all algorithms.
+        These results demonstrate that the use of geometric information and random
+        access memory do not contribute substantively to the established efficiency
+        of state-of-the-art algorithms.'
+    - time: 16:10–16:30
+      title: Bounded-Error Policy Optimization for Mixed Discrete-Continuous MDPs
+        via Constraint Generation in Nonlinear Programming
+      speaker: Michael Gimelfarb, Ayal Taitler, Scott Sanner
+      doi: https://doi.org/10.1007/978-3-031-95973-8_15
+      abstract: We propose the Constraint-Generation Policy Optimization (CGPO) framework
+        to optimize policy parameters within compact and interpretable policy classes
+        for mixed discrete-continuous Markov Decision Processes (DC-MDP). CGPO can
+        not only provide bounded policy error guarantees over an infinite range of
+        initial states for many DC-MDPs with expressive nonlinear dynamics, but it
+        can also provably derive optimal policies in cases where it terminates with
+        zero error. Furthermore, CGPO can generate worst-case state trajectories to
+        diagnose policy deficiencies and provide counterfactual explanations of optimal
+        actions. To achieve such results, CGPO proposes a bilevel mixed-integer nonlinear
+        optimization framework for optimizing policies in defined expressivity classes
+        (e.g. piecewise linear) and reduces it to an optimal constraint generation
+        methodology that adversarially generates worst-case state trajectories. Furthermore,
+        leveraging modern nonlinear optimizers, CGPO can obtain solutions with bounded
+        optimality gap guarantees. We handle stochastic transitions through chance
+        constraints, providing high-probability performance guarantees. We also present
+        a roadmap for understanding the computational complexities of different expressivity
+        classes of policy, reward, and transition dynamics. We experimentally demonstrate
+        the applicability of CGPO across various domains, including inventory control,
+        management of a water reservoir system, and physics control. In summary, CGPO
+        provides structured, compact and explainable policies with bounded performance
+        guarantees, enabling worst-case scenario generation and counterfactual policy
+        diagnostics.
+    - time: 16:30–16:50
+      title: Algorithm Configuration in Sequential Decision-Making
+      speaker: Luca Begnardi, Bart von Meijenfeldt, Yingqian Zhang, Willem van Jaarsveld,
+        Hendrik Baier
+      doi: https://doi.org/10.1007/978-3-031-95973-8_6
+      abstract: 'Proper parameter configuration of algorithms is essential, but often
+        time-consuming and complex, as many parameters need to be tuned simultaneously
+        and evaluation can be expensive. In this paper, we focus on sequential decision-making
+        (SDM) algorithms, which are applied to problems that require a series of decisions
+        to be taken sequentially, aiming for an optimal cumulative outcome for the
+        agent. To do this, every time the agent needs to make a decision, SDM algorithms
+        take the current state of the environment as input and provide a decision
+        as output. We propose a taxonomy of algorithm configuration approaches for
+        SDM and introduce the concept of Per-State Algorithm Configuration (PSAC).
+        To perform PSAC automatically, we present a framework based on Reinforcement
+        Learning (RL). We demonstrate how PSAC by RL works in practice by applying
+        it to two SDM algorithms on two SDM problems: Monte Carlo Tree Search, to
+        solve a collaborative order picking problem in warehouses, and AlphaZero,
+        to play a classic board game called Connect Four. Our experiments show that,
+        in both use cases, PSAC achieves significant performance improvements compared
+        to fixed parameter configurations. In general, our work expands the field
+        of automated algorithm configuration and opens new possibilities for further
+        research on SDM algorithms and their applications. Code is available at: https://github.com/ai-for-decision-making-tue/Per-State_Algorithm_Configuration
+        .'
+  - time: 16:50–17:00
+    title: Closing Remarks
+    chair: Guido Tack

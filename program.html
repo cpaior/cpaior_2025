@@ -71,17 +71,23 @@ title: Program
         {% for s in day.sessions %}
         {% assign j = forloop.index %}
         <div id="session-{{ i }}-{{ j }}" class="session kind-{{ s.kind | default: 'technical' }}" data-track="{{ s.room }}">
-            <summary>
+            <div class="session-header">
             {{ s.title }}
             <span class="badge">{{ s.time }}</span>
             {% if s.room %}<span class="badge">{{ s.room }}</span>{% endif %}
             {% if s.chair %}<span class="badge">Chair: {{ s.chair }}</span>{% endif %}
-            </summary>
+            </div>
             {% if s.talks %}
             <div class="talks">
             {% for t in s.talks %}
-                <article class="talk" data-search="{{ t.title | downcase }} {{ t.speaker | downcase }} {{ s.room | downcase }}">
-                <div class="talk-time">{{ t.time }}</div>
+                <article class="talk talk-type-{{ t.type | downcase | default: 'regular' }}" data-search="{{ t.title | downcase }} {{ t.speaker | downcase }} {{ s.room | downcase }}">
+                <div class="talk-time">
+                    <div class="time">{{ t.time }}</div>
+                    {% assign flag = t.flag | to_s | strip %}
+                    {% if flag != '' %}
+                    <div class="talk-flag is-{{ flag | downcase }}">{{ flag }}</div>
+                    {% endif %}
+                </div>
                 <div>
                     <div class="talk-title">
                     {{ t.title }}
@@ -106,8 +112,19 @@ title: Program
                     </div>
                     <div class="talk-meta">
                     {% if t.speaker %}
-                    {{ t.speaker }}{% if t.affiliation %} ({{ t.affiliation }}){% endif %}{% endif %}
+                    {{ t.speaker }}{% if t.affiliation %} ({{ t.affiliation }}){% endif %}
+                    {% endif %}
+                    {% if t.note %}
+                    <div class="talk-note">{{ t.note }}</div>
+                    {% endif %}
                     </div>
+                    {% if t.abstract %}
+                    <details class="talk-abstract">
+                        <summary>Abstract</summary>
+                        <div>{{ t.abstract }}
+                        </div>
+                    </details>
+                    {% endif %}
                 </div>
                 </article>
             {% endfor %}
