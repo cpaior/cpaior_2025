@@ -639,10 +639,6 @@ days:
         show that our method has predictive performance comparable to the other approaches,
         can guarantee \(100\%\) constraint satisfaction, and has a minimal computational
         cost at inference time.
-    - time: 16:50–17:00
-      title: A Surrogate-Based Multi-Objective Optimization Framework with Uncertainty
-        Consideration
-      speaker: Jesica de Armas
   - time: 18:30–23:00
     title: Conference Banquet
     room: Old Melbourne Gaol
