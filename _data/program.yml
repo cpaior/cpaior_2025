@@ -68,6 +68,7 @@ days:
   - title: Session 1 - Symmetry Breaking and Constraint Acquisition
     time: 09:00–10:00
     room: Forum 3
+    chair: Ruth Hoffmann
     talks:
     - time: 09:00–09:20
       title: Breaking the Symmetries of Indistinguishable Objects
@@ -131,13 +132,16 @@ days:
   - time: 10:30–11:30
     title: Session 2 - Invited Talk
     room: Forum 3
+    chair: Peter Stuckey
     talks:
     - time: 10:30–11:30
-      title: Invited Talk
+      title: "Invited Talk: Towards neuro-symbolic CP"
       speaker: Louis-Martin Rousseau
+      abstract: This presentation explores the integration of machine learning into constraint programming (CP) to build the next generation of neuro-symbolic solvers. It highlights how learning-based techniques—such as reinforcement learning and graph neural networks—can enhance search heuristics and propagation strategies. The presentation also examines recent advances in leveraging Lagrangian relaxation and decomposition methods through learning to strengthen dual bounds and improve solver efficiency. Finally, it explores how AI can be used to enhance the art of modelling in CP, and it discusses the many challenges of combining artificial intelligence and logical reasoning to enhance the power, adaptability, and scalability of combinatorial optimization.
   - time: 11:30–11:50
     title: Session 3 - Extended Abstracts
     room: Forum 3
+    chair: Peter Stuckey
     talks:
     - time: 11:30–11:40
       title: Enhancing Beam Search with Machine Learning for Resource-Constrained
@@ -156,6 +160,7 @@ days:
     title: 'Session 4 - Applications: Scheduling and resource allocation in industry,
       healthcare, sustainability'
     room: Forum 3
+    chair: Nysret Musliu
     talks:
     - time: 13:30–13:50
       title: Optimized Scheduling of Medical Appointment Sequences using Constraint
@@ -245,6 +250,7 @@ days:
   - time: 15:30–17:00
     title: Session 5 - Reinforcement Learning and Learning Heuristics
     room: Forum 3
+    chair: Pierre Schaus
     talks:
     - time: 15:30–15:50
       title: Reinforcement Learning-based Heuristics to Guide Domain-Independent Dynamic
@@ -328,8 +334,9 @@ days:
       title: Constrained Sequential Inference in Machine Learning Using Constraint
         Programming
       speaker: Virasone Manibod, David Saikali, Gilles Pesant
-  - time: 18:00–20:00
+  - time: 17:30–19:30
     title: Opening Reception
+    room: RMIT Alumni Courtyard
     kind: social
 - label: Wednesday, 12 November 2025
   sessions:
@@ -353,27 +360,28 @@ days:
   - time: 10:30–12:00
     title: 'Session 6 - Applications: Satellites and UAVs'
     room: Forum 3
+    chair: Vicky Mak-Hau
     talks:
     - time: 10:30–10:50
-      title: 'Time-dependent Orienteering for High Altitude UAVs to Monitor Greenhouse
-        Gases:  Mixed Integer Programming vs. Monte Carlo Tree Search'
-      speaker: Richard Levinson, Vinay Ravindra, Jeremy Frank, Meghan Saephan
-      doi: https://doi.org/10.1007/978-3-031-95976-9_6
-      abstract: 'Novel Earth observing systems aim to leverage newly developed Uncrewed
-        Aerial Vehicles (UAVs) to provide higher resolution spatio-temporal data than
-        is currently available through satellite, crewed flights, or in-situ sensors,
-        for many climate science applications. The Intelligent Long Endurance Earth
-        Observing System (ILEOS) provides science activity planning for obtaining
-        higher quality spatio-temporal data from UAVs. ILEOS fuses coarse-grained
-        data available from satellites and other sources to identify high value science
-        targets, and produces flight plans for high altitude long endurance (HALE)
-        UAVs, choosing which targets to observe to maximize science return. ILEOS
-        uses a variant of the Orienteering Problem with time-dependent science reward
-        values, with novel extensions to model vehicle turn times and no fly zones.
-        Two solution methods are presented: Mixed Integer Linear Programming (MILP)
-        and Monte Carlo Tree Search (MCTS). Experiments are conducted to compare their
-        performance on six real-world scenarios. Results show that MCTS often outperforms
-        a leading MILP solver.'
+      title: Satellite Communication Resources Management in a Earth Observation Federation
+        of Constellations
+      speaker: Henoïk Willot, Jean-Loup Farges, Gauthier Picard, Philippe Pavero
+      doi: https://doi.org/10.1007/978-3-031-95976-9_15
+      abstract: This paper addresses a new problem arising from the novel concept
+        of multi-mission federation in Earth observation. This problem arises because
+        of the development of several competing ground station networks that could
+        be used by a component of federated missions called Satellite Communication
+        and Resource Management System (SCRMS). Among the functions of SCRMS selection
+        of contacts is a challenging decision problem. It is an optimization problem
+        with Boolean variables corresponding to the selection of some contacts among
+        potential contacts. Constraints enforce the fulfillment of the communication
+        needs of the satellites. The considered criteria are the communication cost
+        and the conflicts and jamming between satellites when communicating with sites,
+        optimized lexicographically. We propose a linear program, several incomplete
+        search schemes and greedy allocation schemes to address this problem, and
+        evaluate them on realistic systems. Results indicate that the linear program
+        complies with computation time requirements and produces better contact selection
+        plans than other optimization schemes.
     - time: 10:50–11:10
       title: Integer and Constraint Programming for the Offline Nanosatellite Partition
         Scheduling Problem
@@ -425,31 +433,32 @@ days:
         This hybrid optimization approach significantly improves the solution quality
         when compared to a standard scheduling approach.
     - time: 11:30–11:50
-      title: Satellite Communication Resources Management in a Earth Observation Federation
-        of Constellations
-      speaker: Henoïk Willot, Jean-Loup Farges, Gauthier Picard, Philippe Pavero
-      doi: https://doi.org/10.1007/978-3-031-95976-9_15
-      abstract: This paper addresses a new problem arising from the novel concept
-        of multi-mission federation in Earth observation. This problem arises because
-        of the development of several competing ground station networks that could
-        be used by a component of federated missions called Satellite Communication
-        and Resource Management System (SCRMS). Among the functions of SCRMS selection
-        of contacts is a challenging decision problem. It is an optimization problem
-        with Boolean variables corresponding to the selection of some contacts among
-        potential contacts. Constraints enforce the fulfillment of the communication
-        needs of the satellites. The considered criteria are the communication cost
-        and the conflicts and jamming between satellites when communicating with sites,
-        optimized lexicographically. We propose a linear program, several incomplete
-        search schemes and greedy allocation schemes to address this problem, and
-        evaluate them on realistic systems. Results indicate that the linear program
-        complies with computation time requirements and produces better contact selection
-        plans than other optimization schemes.
+      title: 'Time-dependent Orienteering for High Altitude UAVs to Monitor Greenhouse
+        Gases:  Mixed Integer Programming vs. Monte Carlo Tree Search'
+      speaker: Richard Levinson, Vinay Ravindra, Jeremy Frank, Meghan Saephan
+      doi: https://doi.org/10.1007/978-3-031-95976-9_6
+      abstract: 'Novel Earth observing systems aim to leverage newly developed Uncrewed
+        Aerial Vehicles (UAVs) to provide higher resolution spatio-temporal data than
+        is currently available through satellite, crewed flights, or in-situ sensors,
+        for many climate science applications. The Intelligent Long Endurance Earth
+        Observing System (ILEOS) provides science activity planning for obtaining
+        higher quality spatio-temporal data from UAVs. ILEOS fuses coarse-grained
+        data available from satellites and other sources to identify high value science
+        targets, and produces flight plans for high altitude long endurance (HALE)
+        UAVs, choosing which targets to observe to maximize science return. ILEOS
+        uses a variant of the Orienteering Problem with time-dependent science reward
+        values, with novel extensions to model vehicle turn times and no fly zones.
+        Two solution methods are presented: Mixed Integer Linear Programming (MILP)
+        and Monte Carlo Tree Search (MCTS). Experiments are conducted to compare their
+        performance on six real-world scenarios. Results show that MCTS often outperforms
+        a leading MILP solver.'
   - time: 12:00–13:30
     title: Lunch break
     kind: break
   - time: 13:30–15:00
     title: Session 7 - Solving Technology
     room: Forum 3
+    chair: Michael Codish
     talks:
     - time: 13:30–13:50
       title: Revisiting Pseudo-Boolean Encodings from an Integer Perspective
@@ -542,6 +551,7 @@ days:
   - time: 15:30–17:00
     title: Session 8 - Machine Learning and Mixed Integer Programming
     room: Forum 3
+    chair: Edward Lam
     talks:
     - time: 15:30–15:50
       title: LLMs for Cold-Start Cutting Plane Separator Configuration
@@ -659,6 +669,7 @@ days:
   - time: 10:30–12:00
     title: 'Session 9 - Applications: Manufacturing and Laboratory Scheduling'
     room: Forum 3
+    chair: Gilles Pesant
     talks:
     - time: 10:30–10:50
       title: Modeling and Solving the Generalized Test Laboratory Scheduling Problem
@@ -732,6 +743,7 @@ days:
   - time: 13:30–15:00
     title: 'Session 10 - Applications: Transport and Power Systems'
     room: Forum 3
+    chair: Guido Tack
     talks:
     - time: 13:30–13:50
       title: A Column Generation Heuristic for Multi-depot Electric Bus Scheduling
@@ -821,6 +833,7 @@ days:
   - time: 15:30–17:00
     title: Session 11 - Learning, Algorithm Configuration and MDPs
     room: Forum 3
+    chair: Jip Dekker
     talks:
     - time: 15:30–15:50
       title: Accelerated Discovery of Set Cover Solutions via Graph Neural Networks
