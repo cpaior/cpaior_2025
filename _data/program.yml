@@ -819,11 +819,11 @@ days:
         Results from both a simulated annealer and real QAH are compared, demonstrating
         the effectiveness of this algorithm in reducing qubit requirements and producing
         near-optimal solutions on noisy QAH.
-    - time: 14:30–14:50
+    - time: 14:30–14:40
       title: Dynamic Discretization Discovery for Drone-Assisted Vehicle Routing Problem
         with Time Windows
       speaker: Zihan Zhang, Edward Lam, Pierre Le Bodic
-    - time: 14:50–15:00
+    - time: 14:40–14:50
       title: Constraint-based In-Station Train Dispatching
       speaker: Andreas Schutt, Matteo Cardellini, Jip J. Dekker, Daniel Harabor, Marco
         Maratea, Mauro Vallati
