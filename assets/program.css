@@ -416,6 +416,11 @@ details.talk-abstract > summary:focus-visible,
   box-shadow: 0 0 0 2px color-mix(in oklab, var(--flag-border), transparent 60%);
 }
 
+.talk-flag.is-invited    { --flag-bg:    #dcfce7;        /* soft green 200 */
+  --flag-border:#86efac;        /* green 300 */
+  --flag-text:  #14532d;        /* green 900 */
+}
+
 .talk-flag.is-award    { --flag-bg:    #fee2e2;        /* soft red 200 */
   --flag-border:#fca5a5;        /* red 300 */
   --flag-text:  #7f1d1d;        /* red 900 */

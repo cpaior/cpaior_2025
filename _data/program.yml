@@ -136,6 +136,7 @@ days:
     talks:
     - time: 10:30–11:30
       title: "Invited Talk: Towards neuro-symbolic CP"
+      flag: Invited
       speaker: Louis-Martin Rousseau
       abstract: This presentation explores the integration of machine learning into constraint programming (CP) to build the next generation of neuro-symbolic solvers. It highlights how learning-based techniques—such as reinforcement learning and graph neural networks—can enhance search heuristics and propagation strategies. The presentation also examines recent advances in leveraging Lagrangian relaxation and decomposition methods through learning to strengthen dual bounds and improve solver efficiency. Finally, it explores how AI can be used to enhance the art of modelling in CP, and it discusses the many challenges of combining artificial intelligence and logical reasoning to enhance the power, adaptability, and scalability of combinatorial optimization.
   - time: 11:30–11:50
@@ -349,8 +350,10 @@ days:
     room: Forum
     talks:
     - time: 09:00–10:00
-      title: Invited Talk (details coming soon)
+      title: 'Invited Talk: Sequential Decision-Making for Robots Operating in Non Deterministic and Partially Observable World'
+      flag: Invited
       speaker: Hanna Kurniawati
+      abstract: In recent years, robotics hardware has advanced tremendously, with increasingly affordable humanoids, quadrupeds, telepresence robots, and many more. Despite these advances, developing autonomous or semi-autonomous robots that can reliably, efficiently, and safely operate in our environments remains an open problem. Key to this difficulty is the ubiquity of uncertainty. These robots must compute effective strategies to achieve their goals even when the outcomes of their actions are uncertain, their sensors and perception systems are erroneous, and the environments they operate in are dynamic and only partially observable. Moreover, they must ensure safety for both the robots and the humans around them. However, the technology that enables robots to efficiently construct effective strategies in the presence of a wide variety of uncertainty is still lacking. In this talk, I will present some of our work in developing such a technology, specifically on our recent work in Partially Observable Markov Decision Processes (POMDPs) —the general and principled framework for sequential decision-making under uncertainty. I will also present how this technology can be applied for safety assurance of autonomous systems.
       note: <a href='https://icaps25.icaps-conference.org/program/keynotes/'>See
         ICAPS program page for details</a>
   - time: 10:00–10:30
@@ -654,8 +657,10 @@ days:
     room: Forum
     talks:
     - time: 09:00–10:00
-      title: Invited Talk (details coming soon)
+      title: 'Invited Talk: Machine Learning meets Combinatorial Optimization'
+      flag: Invited
       speaker: Bistra Dilkina
+      abstract: Machine learning and discrete optimization have both made significant strides in methodology and in successful applications. Their fusion, however, can provide the next big step change in solving hard combinatorial optimization problems more effectively. In this talk, I will highlight recent successes in integrating ML into existing combinatorial optimization algorithms, using distributions of related optimization instances as training data and leveraging techniques such as contrastive loss and multi-task learning. The successful hybridization of neural models and symbolic solvers will be demonstrated across mixed integer linear programming, multi-agent path finding, and nonlinear optimization problems.
       note: <a href='https://icaps25.icaps-conference.org/program/keynotes/'>See
         ICAPS program page for details</a>
   - time: 10:00–10:30
