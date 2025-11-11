@@ -435,26 +435,9 @@ days:
         an optimal schedule satisfying detailed time-dependent transition constraints.
         This hybrid optimization approach significantly improves the solution quality
         when compared to a standard scheduling approach.
-    - time: 11:30–11:50
-      title: 'Time-dependent Orienteering for High Altitude UAVs to Monitor Greenhouse
-        Gases:  Mixed Integer Programming vs. Monte Carlo Tree Search'
-      speaker: Richard Levinson, Vinay Ravindra, Jeremy Frank, Meghan Saephan
-      doi: https://doi.org/10.1007/978-3-031-95976-9_6
-      abstract: 'Novel Earth observing systems aim to leverage newly developed Uncrewed
-        Aerial Vehicles (UAVs) to provide higher resolution spatio-temporal data than
-        is currently available through satellite, crewed flights, or in-situ sensors,
-        for many climate science applications. The Intelligent Long Endurance Earth
-        Observing System (ILEOS) provides science activity planning for obtaining
-        higher quality spatio-temporal data from UAVs. ILEOS fuses coarse-grained
-        data available from satellites and other sources to identify high value science
-        targets, and produces flight plans for high altitude long endurance (HALE)
-        UAVs, choosing which targets to observe to maximize science return. ILEOS
-        uses a variant of the Orienteering Problem with time-dependent science reward
-        values, with novel extensions to model vehicle turn times and no fly zones.
-        Two solution methods are presented: Mixed Integer Linear Programming (MILP)
-        and Monte Carlo Tree Search (MCTS). Experiments are conducted to compare their
-        performance on six real-world scenarios. Results show that MCTS often outperforms
-        a leading MILP solver.'
+    - time: 11:30–11:40
+      title: 'CPAIOR 2026, ACP Summer School 2026'
+      speaker: Guido Tack
   - time: 12:00–13:30
     title: Lunch break
     kind: break
